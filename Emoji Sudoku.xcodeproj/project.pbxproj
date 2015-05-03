@@ -21,6 +21,9 @@
 		2E6628C41AF5D432006E51AC /* Emoji Sudoku WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2E6628AC1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2E6628CD1AF5DE01006E51AC /* EmojiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6628CC1AF5DE01006E51AC /* EmojiPicker.swift */; };
 		2E6628CF1AF5F693006E51AC /* SudokuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6628CE1AF5F693006E51AC /* SudokuCell.swift */; };
+		2EC6BB541AF6B2D800AE8F19 /* VictoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6BB531AF6B2D800AE8F19 /* VictoryScreen.swift */; };
+		2EC6BB561AF6BA6300AE8F19 /* CustomMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6BB551AF6BA6300AE8F19 /* CustomMain.swift */; };
+		2EC6BB581AF6BB1400AE8F19 /* CustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6BB571AF6BB1400AE8F19 /* CustomPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		2E6628C01AF5D432006E51AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E6628CC1AF5DE01006E51AC /* EmojiPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiPicker.swift; sourceTree = "<group>"; };
 		2E6628CE1AF5F693006E51AC /* SudokuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SudokuCell.swift; sourceTree = "<group>"; };
+		2EC6BB531AF6B2D800AE8F19 /* VictoryScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VictoryScreen.swift; sourceTree = "<group>"; };
+		2EC6BB551AF6BA6300AE8F19 /* CustomMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMain.swift; sourceTree = "<group>"; };
+		2EC6BB571AF6BB1400AE8F19 /* CustomPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +181,9 @@
 				2E6628B01AF5D432006E51AC /* InterfaceController.swift */,
 				2E6628CE1AF5F693006E51AC /* SudokuCell.swift */,
 				2E6628CC1AF5DE01006E51AC /* EmojiPicker.swift */,
+				2EC6BB531AF6B2D800AE8F19 /* VictoryScreen.swift */,
+				2EC6BB551AF6BA6300AE8F19 /* CustomMain.swift */,
+				2EC6BB571AF6BB1400AE8F19 /* CustomPicker.swift */,
 				2E6628B21AF5D432006E51AC /* Images.xcassets */,
 				2E6628AE1AF5D432006E51AC /* Supporting Files */,
 			);
@@ -388,6 +397,9 @@
 			files = (
 				2E6628CD1AF5DE01006E51AC /* EmojiPicker.swift in Sources */,
 				2E6628CF1AF5F693006E51AC /* SudokuCell.swift in Sources */,
+				2EC6BB581AF6BB1400AE8F19 /* CustomPicker.swift in Sources */,
+				2EC6BB541AF6B2D800AE8F19 /* VictoryScreen.swift in Sources */,
+				2EC6BB561AF6BA6300AE8F19 /* CustomMain.swift in Sources */,
 				2E6628B11AF5D432006E51AC /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -656,6 +668,7 @@
 				2E6628A41AF5D3F2006E51AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E6628A51AF5D3F2006E51AC /* Build configuration list for PBXNativeTarget "Emoji SudokuTests" */ = {
 			isa = XCConfigurationList;
@@ -664,6 +677,7 @@
 				2E6628A71AF5D3F2006E51AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E6628C51AF5D432006E51AC /* Build configuration list for PBXNativeTarget "Emoji Sudoku 😎" */ = {
 			isa = XCConfigurationList;
@@ -672,6 +686,7 @@
 				2E6628C71AF5D432006E51AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E6628C81AF5D432006E51AC /* Build configuration list for PBXNativeTarget "Emoji Sudoku WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -680,6 +695,7 @@
 				2E6628CA1AF5D432006E51AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

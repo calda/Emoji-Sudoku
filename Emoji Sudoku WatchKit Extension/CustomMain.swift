@@ -9,18 +9,14 @@
 import Foundation
 import WatchKit
 
-class EmojiPicker : WKInterfaceController {
+class CustomMain : WKInterfaceController {
     
     @IBOutlet weak var button1: WKInterfaceButton!
     @IBOutlet weak var button2: WKInterfaceButton!
     @IBOutlet weak var button3: WKInterfaceButton!
     @IBOutlet weak var button4: WKInterfaceButton!
     
-    var main : InterfaceController?
-    
-    override func awakeWithContext(context: AnyObject?) {
-        main = (context as! InterfaceController)
-    }
+    var selectedEmoji : Emoji?
     
     override func willActivate() {
         super.willActivate()
@@ -31,9 +27,9 @@ class EmojiPicker : WKInterfaceController {
         button4.setTitle(EMOJI_4)
     }
     
-    func pressed(emoji: Emoji?) {
-        main!.cell[main!.selectedCell.0][main!.selectedCell.1].emoji = emoji
-        self.dismissController()
+    func pressed(emoji: Emoji) {
+        selectedEmoji = emoji
+        self.presentControllerWithName("customPicker", context: self)
     }
     
     @IBAction func pressed1() {
@@ -50,9 +46,5 @@ class EmojiPicker : WKInterfaceController {
     
     @IBAction func pressed4() {
         pressed(Emoji.Four)
-    }
-    
-    @IBAction func pressedClear() {
-        pressed(nil)
     }
 }

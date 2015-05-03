@@ -44,4 +44,10 @@ class SudokuCell {
         button.setBackgroundColor(UIColor(hue: 0.5, saturation: baseWhite * 1.5, brightness: baseWhite * 1.5, alpha: 1.0))
     }
     
+    func setVictoryOnButton(button: WKInterfaceButton) {
+        var baseWhite : CGFloat = 0.0
+        baseColor.getWhite(&baseWhite, alpha: nil)
+        button.setBackgroundColor(UIColor(hue: 0.33, saturation: baseWhite * 2.5, brightness: baseWhite * 2.5, alpha: 1.0))
+    }
+    
 }

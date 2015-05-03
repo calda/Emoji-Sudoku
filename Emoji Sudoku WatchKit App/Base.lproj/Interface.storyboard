@@ -174,7 +174,11 @@
                     </items>
                     <menu key="menu" id="I6J-df-XKn">
                         <items>
-                            <menuItem title="Customize" icon="shuffle" id="wsS-xd-PeW"/>
+                            <menuItem title="Customize" icon="shuffle" id="wsS-xd-PeW">
+                                <connections>
+                                    <action selector="presentCustomizeController" destination="AgC-eL-Hgc" id="tLI-y0-jhL"/>
+                                </connections>
+                            </menuItem>
                             <menuItem title="Restart" icon="repeat" id="g2K-1v-cO7" userLabel="Restart">
                                 <connections>
                                     <action selector="restart" destination="AgC-eL-Hgc" id="dbI-bE-hJH"/>
@@ -202,14 +206,311 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="249" y="402"/>
+            <point key="canvasLocation" x="342" y="188"/>
+        </scene>
+        <!--customPicker-->
+        <scene sceneID="MAc-Jm-sEL">
+            <objects>
+                <controller identifier="customPicker" id="BPQ-xM-O3W" customClass="CustomPicker" customModule="Emoji_Sudoku_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.22" alignment="left" id="BQm-jo-gb5">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" title="😎" id="8ai-3o-7zX">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed00" destination="BPQ-xM-O3W" id="aZu-G6-Ca7"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="❤️" id="1aA-M0-7mK">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed01" destination="BPQ-xM-O3W" id="S0H-gf-pFw"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="🔥" id="YwP-vq-lwA">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed02" destination="BPQ-xM-O3W" id="mZj-UV-zKx"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="🎉" id="itJ-8k-wPh">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed03" destination="BPQ-xM-O3W" id="0IB-mc-3UT"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="DEv-jy-eu8">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" title="✌️" id="aUQ-p6-O4r">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed10" destination="BPQ-xM-O3W" id="eGM-D8-Ckp"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="💩" id="hjj-gB-mQX">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed11" destination="BPQ-xM-O3W" id="OUp-Hh-tqp"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="😈" id="lxn-fT-KaJ">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed12" destination="BPQ-xM-O3W" id="yT9-qH-jV0"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="😇" id="9lt-uk-yBm">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed13" destination="BPQ-xM-O3W" id="kev-Mc-Gnw"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="R76-B3-g8x">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" title="💯" id="tIe-J8-whr">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed20" destination="BPQ-xM-O3W" id="c1z-Zl-7So"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="🇺🇸" id="tE0-je-6fH">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed21" destination="BPQ-xM-O3W" id="Y1G-R3-CLT"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="😍" id="jrr-2D-EYq">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed22" destination="BPQ-xM-O3W" id="CV7-5W-X6m"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="❄️" id="tfa-Ez-RCT">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed23" destination="BPQ-xM-O3W" id="v5q-MW-wh3"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="xdn-b1-tOr">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" title="😂" id="dZf-WJ-W1P">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed30" destination="BPQ-xM-O3W" id="GYe-mK-93g"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="😏" id="Lm7-bT-ncP">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed31" destination="AgC-eL-Hgc" id="thv-MY-cKW"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="🍕" id="7xS-ht-N7J">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed32" destination="AgC-eL-Hgc" id="X4V-CC-Y1a"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="👯" id="shQ-iR-xnx">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed33" destination="AgC-eL-Hgc" id="tbi-Eg-Pxo"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="fmc-D5-umV">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" title="💀" id="cwk-Bp-W4j">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed40" destination="BPQ-xM-O3W" id="myE-Xb-4f7"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="👾" id="QNT-7d-Yeh">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed41" destination="BPQ-xM-O3W" id="itY-l1-FKm"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="🐔" id="0Wr-BD-Kx2">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed42" destination="BPQ-xM-O3W" id="Yec-VF-0eu"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="🌚" id="fa0-gt-oAJ">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed43" destination="BPQ-xM-O3W" id="APi-HI-4Ld"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="Sy5-EA-Jtx">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" title="🍆" id="rMN-BW-idP">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed50" destination="BPQ-xM-O3W" id="3wH-Z9-txb"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="🌎" id="w6x-Zb-mhY">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed51" destination="BPQ-xM-O3W" id="GgX-aF-NfL"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="🍑" id="reV-Gn-3UR">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed52" destination="BPQ-xM-O3W" id="Vqv-xD-cIW"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="💔" id="Zrp-er-USk">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed53" destination="BPQ-xM-O3W" id="TZG-zX-rD6"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="fbO-ix-qSd">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" title="🚙" id="fe1-jp-5ar">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed60" destination="BPQ-xM-O3W" id="EXc-tt-0gw"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="🔮" id="HEH-Nz-wNM">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed61" destination="BPQ-xM-O3W" id="U6h-UT-q8i"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="🙌" id="tpQ-Qg-WZ3">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed62" destination="BPQ-xM-O3W" id="zbj-cW-xK0"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="😘" id="l2i-uH-llV">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="pressed63" destination="BPQ-xM-O3W" id="anU-GU-zwh"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="425" y="665.28999947011471"/>
         </scene>
         <!--picker-->
         <scene sceneID="6iR-2Y-tY3">
             <objects>
                 <controller identifier="picker" id="O6Y-VD-UEp" customClass="EmojiPicker" customModule="Emoji_Sudoku_WatchKit_Extension">
                     <items>
-                        <group width="1" height="0.5" alignment="left" id="MTq-2v-j2s">
+                        <button width="1" height="0.20000000000000001" alignment="left" title="clear" id="vYS-S9-65X">
+                            <color key="titleColor" red="0.87566179037094116" green="0.87563556432723999" blue="0.87565040588378906" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.077524818479999993" green="0.077522501349999995" blue="0.077523812649999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="pressedClear" destination="O6Y-VD-UEp" id="Lj4-hy-upD"/>
+                            </connections>
+                        </button>
+                        <group width="1" height="0.40000000000000002" alignment="left" id="MTq-2v-j2s">
                             <items>
                                 <button width="0.5" height="1" alignment="left" title="😎" id="o8e-gF-ngi">
                                     <color key="titleColor" red="0.92336094379425049" green="0.92329806089401245" blue="0.92333471775054932" alpha="1" colorSpace="calibratedRGB"/>
@@ -229,7 +530,7 @@
                                 </button>
                             </items>
                         </group>
-                        <group width="1" height="0.5" alignment="left" id="Sif-zU-OWo">
+                        <group width="1" height="0.40000000000000002" alignment="left" id="Sif-zU-OWo">
                             <items>
                                 <button width="0.5" height="1" alignment="left" title="🔥" id="DcB-pq-p7C">
                                     <color key="titleColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
@@ -258,7 +559,116 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="443" y="402"/>
+            <point key="canvasLocation" x="242" y="402.00000106543303"/>
+        </scene>
+        <!--Done-->
+        <scene sceneID="8Gy-OH-CkP">
+            <objects>
+                <controller identifier="customize" title="Done" id="jad-10-tAR" customClass="CustomMain" customModule="Emoji_Sudoku_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="0.20000000000000001" alignment="left" text="Tap to Customize" textAlignment="center" id="VGr-b2-ig6">
+                            <color key="textColor" red="0.87566179037094116" green="0.87563556432723999" blue="0.87565040588378906" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <group width="1" height="0.40000000000000002" alignment="left" id="p0l-pl-cZ2">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="😎" id="I7g-08-d7r">
+                                    <color key="titleColor" red="0.9233609438" green="0.92329806089999999" blue="0.92333471779999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.11254779249999999" green="0.1125444248" blue="0.1125463322" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="33"/>
+                                    <connections>
+                                        <action selector="pressed1" destination="jad-10-tAR" id="X4i-ut-JGR"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="❤️" id="q9f-zs-gMd">
+                                    <color key="titleColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.077524818479999993" green="0.077522501349999995" blue="0.077523812649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="33"/>
+                                    <connections>
+                                        <action selector="pressed2" destination="jad-10-tAR" id="uYc-yY-zw6"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.40000000000000002" alignment="left" id="X6l-P4-ZyV">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="🔥" id="Ivv-Wt-qaG">
+                                    <color key="titleColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.077524818479999993" green="0.077522501349999995" blue="0.077523812649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="33"/>
+                                    <connections>
+                                        <action selector="pressed3" destination="jad-10-tAR" id="5VI-XZ-7bX"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="🎉" id="NmA-DY-5Ff">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.11254779249999999" green="0.1125444248" blue="0.1125463322" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="33"/>
+                                    <connections>
+                                        <action selector="pressed4" destination="jad-10-tAR" id="EO8-69-psI"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="button1" destination="I7g-08-d7r" id="qOr-DK-mWQ"/>
+                        <outlet property="button2" destination="q9f-zs-gMd" id="Oqh-wC-0fL"/>
+                        <outlet property="button3" destination="Ivv-Wt-qaG" id="yEX-sP-ErT"/>
+                        <outlet property="button4" destination="NmA-DY-5Ff" id="9D8-d0-31W"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="425" y="403.00000106543303"/>
+        </scene>
+        <!--Sudoku-->
+        <scene sceneID="mCR-5a-36p">
+            <objects>
+                <controller identifier="victory" title="Sudoku" id="n0p-7U-sbC" customClass="VictoryScreen" customModule="Emoji_Sudoku_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="0.26000000000000001" alignment="left" text="😎❤️🔥🎉" textAlignment="center" id="aEH-pB-5kE">
+                            <fontDescription key="font" type="system" pointSize="29"/>
+                            <variation key="device=watch42mm">
+                                <fontDescription key="font" type="system" pointSize="34"/>
+                            </variation>
+                        </label>
+                        <label width="1" height="0.31" alignment="left" text="You Won in XXXXXXXXXX" textAlignment="center" numberOfLines="2" id="QU5-yL-8yU">
+                            <fontDescription key="font" type="system" pointSize="18"/>
+                            <variation key="device=watch42mm">
+                                <fontDescription key="font" type="system" pointSize="18"/>
+                            </variation>
+                        </label>
+                        <button width="1" height="0.20000000000000001" alignment="left" title="Play Again" id="xl8-QO-1Dj">
+                            <connections>
+                                <action selector="playAgain" destination="n0p-7U-sbC" id="sv3-z0-NPN"/>
+                            </connections>
+                        </button>
+                        <label width="1" height="0.23000000000000001" alignment="left" text="Force Touch to Customize Emoji" textAlignment="center" numberOfLines="2" minimumScaleFactor="0.50000000000000011" id="rxN-UQ-r6q">
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                            <variation key="device=watch38mm">
+                                <fontDescription key="font" type="system" pointSize="13"/>
+                            </variation>
+                            <variation key="device=watch42mm">
+                                <fontDescription key="font" type="system" pointSize="14"/>
+                            </variation>
+                        </label>
+                    </items>
+                    <menu key="menu" id="ToU-QC-563">
+                        <items>
+                            <menuItem title="Customize" icon="shuffle" id="Wxc-gz-WBg">
+                                <connections>
+                                    <action selector="customize" destination="n0p-7U-sbC" id="qNp-LP-mjp"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <edgeInsets key="margins" left="1" right="1" top="0.0" bottom="0.0"/>
+                    <connections>
+                        <outlet property="emojisLabel" destination="aEH-pB-5kE" id="d4X-gu-e3a"/>
+                        <outlet property="timeLabel" destination="QU5-yL-8yU" id="8aM-lP-1Ll"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="242" y="616.00000213086605"/>
         </scene>
     </scenes>
 </document>

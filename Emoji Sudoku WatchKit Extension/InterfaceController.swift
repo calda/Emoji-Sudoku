@@ -43,6 +43,18 @@ enum Emoji {
             default: return .Four
         }
     }
+    
+    func inArrayOnce(array: [Emoji?]) -> Bool {
+        var count = 0
+        for emoji in array {
+            if let emoji = emoji {
+                if emoji == self {
+                    count++
+                }
+            }
+        }
+        return count == 1
+    }
 }
 
 class InterfaceController: WKInterfaceController {
@@ -73,6 +85,7 @@ class InterfaceController: WKInterfaceController {
         [SudokuCell(3), SudokuCell(3), SudokuCell(4), SudokuCell(4)]]
     
     var selectedCell = (0, 0)
+    var startTime : NSDate?
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -81,6 +94,9 @@ class InterfaceController: WKInterfaceController {
     func processTap(col: Int, _ row: Int) {
         println("(\(col), \(row))")
         selectedCell = (col, row)
+        if cell[col][row].revealed {
+            return
+        }
         cell[col][row].setSelectedOnButton(buttonMap[col][row]!)
         self.presentControllerWithName("picker", context: self)
     }
@@ -112,12 +128,28 @@ class InterfaceController: WKInterfaceController {
                 cell[row][col].renderOnButton(buttonMap[row][col]!)
             }
         }
+        
+        if validateGrid() {
+            //set all green
+            for row in 0...3 {
+                for col in 0...3 {
+                    cell[row][col].setVictoryOnButton(buttonMap[row][col]!)
+                }
+            }
+            
+            //wait a sec and then show victory screen
+            let time = dispatch_time(DISPATCH_TIME_NOW, Int64(1.0 * Double(NSEC_PER_SEC)))
+            dispatch_after(time, dispatch_get_main_queue(), {
+                self.presentControllerWithName("victory", context: self)
+            })
+        }
 
         super.willActivate()
     }
     
     
     func populateWithSolution() {
+        startTime = NSDate()
         
         func randomEmojiExcluding(exclude: [SudokuCell]) -> Emoji {
             var allEmoji : [Emoji] = [.One, .Two, .Three, .Four]
@@ -174,15 +206,71 @@ class InterfaceController: WKInterfaceController {
             }
         }
         
-        println(allCells)
-        
         for _ in 0...5 {
             let reveal = Int(arc4random_uniform(UInt32(allCells.count - 1)))
             allCells[reveal].revealed = true
+            allCells[reveal].emoji = allCells[reveal].solutionEmoji
             allCells.removeAtIndex(reveal)
         }
         
+    }
+    
+    
+    func validateGrid() -> Bool {
+        //validate columns
+        for col in 0...3 {
+            
+            var colGroup : [Emoji?] = []
+            for row in 0...3 {
+                colGroup.append(cell[col][row].emoji)
+            }
+            if !groupIsValid(colGroup) {
+                return false
+            }
+            
+        }
         
+        //validate rows
+        for row in 0...3 {
+            
+            var rowGroup : [Emoji?] = []
+            for col in 0...3 {
+                rowGroup.append(cell[col][row].emoji)
+            }
+            if !groupIsValid(rowGroup) {
+                return false
+            }
+            
+        }
+        
+        //validate quads
+        let cornerCells : [(Int, Int)] = [(0, 0), (0, 2), (2, 0), (2, 2)]
+        for cornerCell in cornerCells {
+            
+            var quadCells : [Emoji?] = []
+            for x in 0...1 {
+                for y in 0...1 {
+                    let col = cornerCell.0 + x
+                    let row = cornerCell.1 + y
+                    quadCells.append(cell[col][row].emoji)
+                }
+            }
+            if !groupIsValid(quadCells) {
+                return false
+            }
+        }
+        
+        return true
+    }
+    
+    
+    func groupIsValid(group: [Emoji?]) -> Bool {
+        if group.count != 4 { return false }
+        let one = Emoji.One.inArrayOnce(group)
+        let two = Emoji.Two.inArrayOnce(group)
+        let three = Emoji.Three.inArrayOnce(group)
+        let four = Emoji.Four.inArrayOnce(group)
+        return one && two && three && four
     }
     
     
@@ -201,6 +289,10 @@ class InterfaceController: WKInterfaceController {
             }
         }
         
+    }
+    
+    @IBAction func presentCustomizeController() {
+        self.presentControllerWithName("customize", context: self)
     }
     
     @IBAction func pressed00() {
