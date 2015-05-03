@@ -40,6 +40,7 @@
                                     </connections>
                                 </button>
                                 <button width="0.25" height="1" alignment="left" title="😎" id="cm4-HK-Os3">
+                                    <color key="titleColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" type="system" pointSize="20"/>
                                     <variation key="device=watch38mm">
                                         <fontDescription key="font" type="system" pointSize="16"/>
@@ -174,6 +175,11 @@
                     <menu key="menu" id="I6J-df-XKn">
                         <items>
                             <menuItem title="Customize" icon="shuffle" id="wsS-xd-PeW"/>
+                            <menuItem title="Restart" icon="repeat" id="g2K-1v-cO7" userLabel="Restart">
+                                <connections>
+                                    <action selector="restart" destination="AgC-eL-Hgc" id="dbI-bE-hJH"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                     <connections>
@@ -206,12 +212,16 @@
                         <group width="1" height="0.5" alignment="left" id="MTq-2v-j2s">
                             <items>
                                 <button width="0.5" height="1" alignment="left" title="😎" id="o8e-gF-ngi">
+                                    <color key="titleColor" red="0.92336094379425049" green="0.92329806089401245" blue="0.92333471775054932" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.11254779249999999" green="0.1125444248" blue="0.1125463322" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" type="system" pointSize="33"/>
                                     <connections>
                                         <action selector="pressed1" destination="O6Y-VD-UEp" id="8To-xd-d6z"/>
                                     </connections>
                                 </button>
                                 <button width="0.5" height="1" alignment="left" title="❤️" id="DU9-mf-RDi">
+                                    <color key="titleColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.077524818479999993" green="0.077522501349999995" blue="0.077523812649999996" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" type="system" pointSize="33"/>
                                     <connections>
                                         <action selector="pressed2" destination="O6Y-VD-UEp" id="2X4-QK-pbO"/>
@@ -222,12 +232,16 @@
                         <group width="1" height="0.5" alignment="left" id="Sif-zU-OWo">
                             <items>
                                 <button width="0.5" height="1" alignment="left" title="🔥" id="DcB-pq-p7C">
+                                    <color key="titleColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.077524818479999993" green="0.077522501349999995" blue="0.077523812649999996" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" type="system" pointSize="33"/>
                                     <connections>
                                         <action selector="pressed3" destination="O6Y-VD-UEp" id="355-Nv-EEz"/>
                                     </connections>
                                 </button>
                                 <button width="0.5" height="1" alignment="left" title="🎉" id="Zkp-zY-LId">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.11254779249429703" green="0.11254442483186722" blue="0.11254633218050003" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" type="system" pointSize="33"/>
                                     <connections>
                                         <action selector="pressed4" destination="O6Y-VD-UEp" id="oKf-9f-sjr"/>
@@ -244,7 +258,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="554" y="402"/>
+            <point key="canvasLocation" x="443" y="402"/>
         </scene>
     </scenes>
 </document>

@@ -20,6 +20,7 @@
 		2E6628C11AF5D432006E51AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E6628C01AF5D432006E51AC /* Images.xcassets */; };
 		2E6628C41AF5D432006E51AC /* Emoji Sudoku WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2E6628AC1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2E6628CD1AF5DE01006E51AC /* EmojiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6628CC1AF5DE01006E51AC /* EmojiPicker.swift */; };
+		2E6628CF1AF5F693006E51AC /* SudokuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6628CE1AF5F693006E51AC /* SudokuCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		2E6628BE1AF5D432006E51AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		2E6628C01AF5D432006E51AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E6628CC1AF5DE01006E51AC /* EmojiPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiPicker.swift; sourceTree = "<group>"; };
+		2E6628CE1AF5F693006E51AC /* SudokuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SudokuCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				2E6628B01AF5D432006E51AC /* InterfaceController.swift */,
+				2E6628CE1AF5F693006E51AC /* SudokuCell.swift */,
 				2E6628CC1AF5DE01006E51AC /* EmojiPicker.swift */,
 				2E6628B21AF5D432006E51AC /* Images.xcassets */,
 				2E6628AE1AF5D432006E51AC /* Supporting Files */,
@@ -384,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E6628CD1AF5DE01006E51AC /* EmojiPicker.swift in Sources */,
+				2E6628CF1AF5F693006E51AC /* SudokuCell.swift in Sources */,
 				2E6628B11AF5D432006E51AC /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

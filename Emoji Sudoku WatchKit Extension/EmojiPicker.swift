@@ -31,26 +31,26 @@ class EmojiPicker : WKInterfaceController {
         button4.setTitle(EMOJI_4)
     }
     
-    func pressed(emoji: String) {
+    func pressed(emoji: Emoji) {
         println("notification posted")
-        main!.selectedCell!.setTitle(emoji)
+        main!.cell[main!.selectedCell.0][main!.selectedCell.1].emoji = emoji
         self.dismissController()
     }
     
     @IBAction func pressed1() {
-        pressed(EMOJI_1)
+        pressed(Emoji.One)
     }
     
     @IBAction func pressed2() {
-        pressed(EMOJI_2)
+        pressed(Emoji.Two)
     }
     
     @IBAction func pressed3() {
-        pressed(EMOJI_3)
+        pressed(Emoji.Three)
     }
     
     @IBAction func pressed4() {
-        pressed(EMOJI_4)
+        pressed(Emoji.Four)
     }
     
 }
