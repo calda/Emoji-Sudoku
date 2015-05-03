@@ -4,10 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Emoji Sudoku WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Emoji Sudoku.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2E6628821AF5D3F2006E51AC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2E6628971AF5D3F2006E51AC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2E6628B51AF5D432006E51AC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

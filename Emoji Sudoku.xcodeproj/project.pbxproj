@@ -13,6 +13,13 @@
 		2E6628901AF5D3F2006E51AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E66288F1AF5D3F2006E51AC /* Images.xcassets */; };
 		2E6628931AF5D3F2006E51AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6628911AF5D3F2006E51AC /* LaunchScreen.xib */; };
 		2E66289F1AF5D3F2006E51AC /* Emoji_SudokuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E66289E1AF5D3F2006E51AC /* Emoji_SudokuTests.swift */; };
+		2E6628B11AF5D432006E51AC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6628B01AF5D432006E51AC /* InterfaceController.swift */; };
+		2E6628B31AF5D432006E51AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E6628B21AF5D432006E51AC /* Images.xcassets */; };
+		2E6628B71AF5D432006E51AC /* Emoji Sudoku 😎.app in Resources */ = {isa = PBXBuildFile; fileRef = 2E6628B61AF5D432006E51AC /* Emoji Sudoku 😎.app */; };
+		2E6628BF1AF5D432006E51AC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6628BD1AF5D432006E51AC /* Interface.storyboard */; };
+		2E6628C11AF5D432006E51AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E6628C01AF5D432006E51AC /* Images.xcassets */; };
+		2E6628C41AF5D432006E51AC /* Emoji Sudoku WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2E6628AC1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2E6628CD1AF5DE01006E51AC /* EmojiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6628CC1AF5DE01006E51AC /* EmojiPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +30,35 @@
 			remoteGlobalIDString = 2E6628821AF5D3F2006E51AC;
 			remoteInfo = "Emoji Sudoku";
 		};
+		2E6628B81AF5D432006E51AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E66287B1AF5D3F2006E51AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E6628B51AF5D432006E51AC;
+			remoteInfo = "Emoji Sudoku WatchKit App";
+		};
+		2E6628C21AF5D432006E51AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E66287B1AF5D3F2006E51AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E6628AB1AF5D431006E51AC;
+			remoteInfo = "Emoji Sudoku WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2E6628CB1AF5D432006E51AC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2E6628C41AF5D432006E51AC /* Emoji Sudoku WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2E6628831AF5D3F2006E51AC /* Emoji Sudoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Sudoku.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +71,15 @@
 		2E6628981AF5D3F2006E51AC /* Emoji SudokuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Emoji SudokuTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E66289D1AF5D3F2006E51AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E66289E1AF5D3F2006E51AC /* Emoji_SudokuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji_SudokuTests.swift; sourceTree = "<group>"; };
+		2E6628AC1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Emoji Sudoku WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E6628AF1AF5D432006E51AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E6628B01AF5D432006E51AC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2E6628B21AF5D432006E51AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2E6628B61AF5D432006E51AC /* Emoji Sudoku 😎.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Sudoku 😎.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E6628BC1AF5D432006E51AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E6628BE1AF5D432006E51AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2E6628C01AF5D432006E51AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2E6628CC1AF5DE01006E51AC /* EmojiPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +97,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2E6628A91AF5D431006E51AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +112,8 @@
 			children = (
 				2E6628851AF5D3F2006E51AC /* Emoji Sudoku */,
 				2E66289B1AF5D3F2006E51AC /* Emoji SudokuTests */,
+				2E6628AD1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension */,
+				2E6628BA1AF5D432006E51AC /* Emoji Sudoku WatchKit App */,
 				2E6628841AF5D3F2006E51AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +123,8 @@
 			children = (
 				2E6628831AF5D3F2006E51AC /* Emoji Sudoku.app */,
 				2E6628981AF5D3F2006E51AC /* Emoji SudokuTests.xctest */,
+				2E6628AC1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension.appex */,
+				2E6628B61AF5D432006E51AC /* Emoji Sudoku 😎.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +167,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2E6628AD1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2E6628B01AF5D432006E51AC /* InterfaceController.swift */,
+				2E6628CC1AF5DE01006E51AC /* EmojiPicker.swift */,
+				2E6628B21AF5D432006E51AC /* Images.xcassets */,
+				2E6628AE1AF5D432006E51AC /* Supporting Files */,
+			);
+			path = "Emoji Sudoku WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2E6628AE1AF5D432006E51AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E6628AF1AF5D432006E51AC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E6628BA1AF5D432006E51AC /* Emoji Sudoku WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2E6628BD1AF5D432006E51AC /* Interface.storyboard */,
+				2E6628C01AF5D432006E51AC /* Images.xcassets */,
+				2E6628BB1AF5D432006E51AC /* Supporting Files */,
+			);
+			path = "Emoji Sudoku WatchKit App";
+			sourceTree = "<group>";
+		};
+		2E6628BB1AF5D432006E51AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E6628BC1AF5D432006E51AC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +214,12 @@
 				2E66287F1AF5D3F2006E51AC /* Sources */,
 				2E6628801AF5D3F2006E51AC /* Frameworks */,
 				2E6628811AF5D3F2006E51AC /* Resources */,
+				2E6628CB1AF5D432006E51AC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2E6628C31AF5D432006E51AC /* PBXTargetDependency */,
 			);
 			name = "Emoji Sudoku";
 			productName = "Emoji Sudoku";
@@ -150,6 +244,39 @@
 			productReference = 2E6628981AF5D3F2006E51AC /* Emoji SudokuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2E6628AB1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E6628C81AF5D432006E51AC /* Build configuration list for PBXNativeTarget "Emoji Sudoku WatchKit Extension" */;
+			buildPhases = (
+				2E6628A81AF5D431006E51AC /* Sources */,
+				2E6628A91AF5D431006E51AC /* Frameworks */,
+				2E6628AA1AF5D431006E51AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E6628B91AF5D432006E51AC /* PBXTargetDependency */,
+			);
+			name = "Emoji Sudoku WatchKit Extension";
+			productName = "Emoji Sudoku WatchKit Extension";
+			productReference = 2E6628AC1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		2E6628B51AF5D432006E51AC /* Emoji Sudoku 😎 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E6628C51AF5D432006E51AC /* Build configuration list for PBXNativeTarget "Emoji Sudoku 😎" */;
+			buildPhases = (
+				2E6628B41AF5D432006E51AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Emoji Sudoku 😎";
+			productName = "Emoji Sudoku WatchKit App";
+			productReference = 2E6628B61AF5D432006E51AC /* Emoji Sudoku 😎.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +292,13 @@
 					2E6628971AF5D3F2006E51AC = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = 2E6628821AF5D3F2006E51AC;
+					};
+					2E6628AB1AF5D431006E51AC = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					2E6628B51AF5D432006E51AC = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = FZ89A5SZ7C;
 					};
 				};
 			};
@@ -183,6 +317,8 @@
 			targets = (
 				2E6628821AF5D3F2006E51AC /* Emoji Sudoku */,
 				2E6628971AF5D3F2006E51AC /* Emoji SudokuTests */,
+				2E6628AB1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension */,
+				2E6628B51AF5D432006E51AC /* Emoji Sudoku 😎 */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +338,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E6628AA1AF5D431006E51AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E6628B31AF5D432006E51AC /* Images.xcassets in Resources */,
+				2E6628B71AF5D432006E51AC /* Emoji Sudoku 😎.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E6628B41AF5D432006E51AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E6628BF1AF5D432006E51AC /* Interface.storyboard in Resources */,
+				2E6628C11AF5D432006E51AC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +379,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2E6628A81AF5D431006E51AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E6628CD1AF5DE01006E51AC /* EmojiPicker.swift in Sources */,
+				2E6628B11AF5D432006E51AC /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +395,16 @@
 			isa = PBXTargetDependency;
 			target = 2E6628821AF5D3F2006E51AC /* Emoji Sudoku */;
 			targetProxy = 2E6628991AF5D3F2006E51AC /* PBXContainerItemProxy */;
+		};
+		2E6628B91AF5D432006E51AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E6628B51AF5D432006E51AC /* Emoji Sudoku 😎 */;
+			targetProxy = 2E6628B81AF5D432006E51AC /* PBXContainerItemProxy */;
+		};
+		2E6628C31AF5D432006E51AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E6628AB1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension */;
+			targetProxy = 2E6628C21AF5D432006E51AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +423,14 @@
 				2E6628921AF5D3F2006E51AC /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		2E6628BD1AF5D432006E51AC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E6628BE1AF5D432006E51AC /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -390,6 +571,68 @@
 			};
 			name = Release;
 		};
+		2E6628C61AF5D432006E51AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Emoji_Sudoku_WatchKit_Extension;
+				INFOPLIST_FILE = "Emoji Sudoku WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		2E6628C71AF5D432006E51AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				IBSC_MODULE = Emoji_Sudoku_WatchKit_Extension;
+				INFOPLIST_FILE = "Emoji Sudoku WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		2E6628C91AF5D432006E51AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Emoji Sudoku WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2E6628CA1AF5D432006E51AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Emoji Sudoku WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +658,22 @@
 			buildConfigurations = (
 				2E6628A61AF5D3F2006E51AC /* Debug */,
 				2E6628A71AF5D3F2006E51AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2E6628C51AF5D432006E51AC /* Build configuration list for PBXNativeTarget "Emoji Sudoku 😎" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E6628C61AF5D432006E51AC /* Debug */,
+				2E6628C71AF5D432006E51AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2E6628C81AF5D432006E51AC /* Build configuration list for PBXNativeTarget "Emoji Sudoku WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E6628C91AF5D432006E51AC /* Debug */,
+				2E6628CA1AF5D432006E51AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
