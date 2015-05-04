@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14E11f" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="UserEmojis" syncable="YES">
+        <attribute name="emoji1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emoji2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emoji3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emoji4" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="UserEmojis" positionX="-54" positionY="-9" width="128" height="103"/>
+    </elements>
+</model>

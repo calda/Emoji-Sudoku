@@ -95,6 +95,7 @@ class InterfaceController: WKInterfaceController {
         println("(\(col), \(row))")
         selectedCell = (col, row)
         if cell[col][row].revealed {
+            cell[col][row].pingNoOnButton(buttonMap[col][row]!)
             return
         }
         cell[col][row].setSelectedOnButton(buttonMap[col][row]!)
@@ -121,6 +122,22 @@ class InterfaceController: WKInterfaceController {
             buttonMap[3][2] = b32
             buttonMap[3][3] = b33
             populateWithSolution()
+            
+            //pull custom emoji data from iCloud
+            let store = NSUbiquitousKeyValueStore.defaultStore()
+            store.synchronize()
+            if store.stringForKey("EMOJI_1") == nil {
+                store.setString("😎", forKey: "EMOJI_1")
+                store.setString("❤️", forKey: "EMOJI_2")
+                store.setString("🔥", forKey: "EMOJI_3")
+                store.setString("🎉", forKey: "EMOJI_4")
+            }
+            else {
+                EMOJI_1 = store.stringForKey("EMOJI_1")!
+                EMOJI_2 = store.stringForKey("EMOJI_2")!
+                EMOJI_3 = store.stringForKey("EMOJI_3")!
+                EMOJI_4 = store.stringForKey("EMOJI_4")!
+            }
         }
         
         for row in 0...3 {
@@ -213,6 +230,10 @@ class InterfaceController: WKInterfaceController {
             allCells.removeAtIndex(reveal)
         }
         
+        if !validateSolution() {
+            restart()
+        }
+        
     }
     
     
@@ -253,6 +274,54 @@ class InterfaceController: WKInterfaceController {
                     let col = cornerCell.0 + x
                     let row = cornerCell.1 + y
                     quadCells.append(cell[col][row].emoji)
+                }
+            }
+            if !groupIsValid(quadCells) {
+                return false
+            }
+        }
+        
+        return true
+    }
+    
+    //duplicated because I'm lazy OOPS
+    func validateSolution() -> Bool {
+        //validate columns
+        for col in 0...3 {
+            
+            var colGroup : [Emoji?] = []
+            for row in 0...3 {
+                colGroup.append(cell[col][row].solutionEmoji)
+            }
+            if !groupIsValid(colGroup) {
+                return false
+            }
+            
+        }
+        
+        //validate rows
+        for row in 0...3 {
+            
+            var rowGroup : [Emoji?] = []
+            for col in 0...3 {
+                rowGroup.append(cell[col][row].solutionEmoji)
+            }
+            if !groupIsValid(rowGroup) {
+                return false
+            }
+            
+        }
+        
+        //validate quads
+        let cornerCells : [(Int, Int)] = [(0, 0), (0, 2), (2, 0), (2, 2)]
+        for cornerCell in cornerCells {
+            
+            var quadCells : [Emoji?] = []
+            for x in 0...1 {
+                for y in 0...1 {
+                    let col = cornerCell.0 + x
+                    let row = cornerCell.1 + y
+                    quadCells.append(cell[col][row].solutionEmoji)
                 }
             }
             if !groupIsValid(quadCells) {

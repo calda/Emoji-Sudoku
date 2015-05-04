@@ -20,6 +20,10 @@ class CustomPicker: WKInterfaceController {
         ["💀", "👾", "🐔", "🌚"],
         ["🍆", "🌎", "🍑", "💔"],
         ["🚙", "🔮", "🙌", "😘"],
+        ["🚨", "🇬🇧", "🏊", "👑"],
+        ["🎃", "🎊", "🎯", "💸"],
+        ["💉", "💮", "👌", "💪"],
+        ["👺", "🙏", "👅", "🍭"]
     ]
     
     override func awakeWithContext(context: AnyObject?) {
@@ -39,14 +43,22 @@ class CustomPicker: WKInterfaceController {
         }
         
         if isNewToSet {
+            
+            let store = NSUbiquitousKeyValueStore.defaultStore()
+            store.synchronize()
+            
             if main!.selectedEmoji! == .One {
                 EMOJI_1 = selectedEmoji
+                store.setString(selectedEmoji, forKey: "EMOJI_1")
             } else if main!.selectedEmoji! == .Two {
                 EMOJI_2 = selectedEmoji
+                store.setString(selectedEmoji, forKey: "EMOJI_2")
             } else if main!.selectedEmoji! == .Three {
                 EMOJI_3 = selectedEmoji
+                store.setString(selectedEmoji, forKey: "EMOJI_3")
             } else if main!.selectedEmoji! == .Four {
                 EMOJI_4 = selectedEmoji
+                store.setString(selectedEmoji, forKey: "EMOJI_4")
             }
         }
         
@@ -164,6 +176,70 @@ class CustomPicker: WKInterfaceController {
     
     @IBAction func pressed63() {
         processTap(6, 3)
+    }
+    
+    @IBAction func pressed70() {
+        processTap(7, 0)
+    }
+    
+    @IBAction func pressed71() {
+        processTap(7, 1)
+    }
+    
+    @IBAction func pressed72() {
+        processTap(7, 2)
+    }
+    
+    @IBAction func pressed73() {
+        processTap(7, 3)
+    }
+    
+    @IBAction func pressed80() {
+        processTap(8, 0)
+    }
+    
+    @IBAction func pressed81() {
+        processTap(8, 1)
+    }
+    
+    @IBAction func pressed82() {
+        processTap(8, 2)
+    }
+    
+    @IBAction func pressed83() {
+        processTap(8, 3)
+    }
+    
+    @IBAction func pressed90() {
+        processTap(9, 0)
+    }
+    
+    @IBAction func pressed91() {
+        processTap(9, 1)
+    }
+    
+    @IBAction func pressed92() {
+        processTap(9, 2)
+    }
+    
+    @IBAction func pressed93() {
+        processTap(9, 3)
+    }
+    
+    @IBAction func presseda0() {
+        processTap(10, 0)
+    }
+    
+    @IBAction func presseda1() {
+        processTap(10, 1)
+    }
+    
+    @IBAction func presseda2() {
+        processTap(10, 2)
+    }
+    
+    @IBAction func presseda3() {
+        processTap(10, 3)
     }
     
 }
