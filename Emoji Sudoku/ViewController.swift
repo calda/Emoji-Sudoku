@@ -28,8 +28,8 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         
         if self.currentPage == 15 {
             //loop back around
-            self.currentPage = 2
-            self.screenView.scrollToItemAtIndexPath(NSIndexPath(forItem: 1, inSection: 0), atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: false)
+            self.currentPage = 1
+            self.screenView.scrollToItemAtIndexPath(NSIndexPath(forItem: 0, inSection: 0), atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: false)
         }
         
         screenView.scrollToItemAtIndexPath(NSIndexPath(forItem: currentPage, inSection: 0), atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: true)

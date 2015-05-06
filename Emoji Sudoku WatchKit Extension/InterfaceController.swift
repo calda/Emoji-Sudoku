@@ -140,10 +140,19 @@ class InterfaceController: WKInterfaceController {
             }
         }
         
+        var userModifiedCount = 0
+        
         for row in 0...3 {
             for col in 0...3 {
                 cell[row][col].renderOnButton(buttonMap[row][col]!)
+                if cell[row][col].emoji != nil && !cell[row][col].revealed {
+                    userModifiedCount++
+                }
             }
+        }
+        
+        if userModifiedCount == 0 {
+            startTime = NSDate()
         }
         
         if validateGrid() {
@@ -166,7 +175,6 @@ class InterfaceController: WKInterfaceController {
     
     
     func populateWithSolution() {
-        startTime = NSDate()
         
         func randomEmojiExcluding(exclude: [SudokuCell]) -> Emoji {
             var allEmoji : [Emoji] = [.One, .Two, .Three, .Four]
