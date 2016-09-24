@@ -16,11 +16,11 @@ class VictoryScreen : WKInterfaceController {
     
     var main : InterfaceController?
     
-    override func awakeWithContext(context: AnyObject?) {
+    override func awake(withContext context: Any?) {
         main = (context as! InterfaceController)
         
         let startTime = main!.startTime!
-        let elapsed = NSDate().timeIntervalSinceDate(startTime)
+        let elapsed = Date().timeIntervalSince(startTime as Date)
         let durationSeconds = Int(elapsed)
         
         let printMinutes : Int = durationSeconds / 60
@@ -29,16 +29,16 @@ class VictoryScreen : WKInterfaceController {
     }
     
     override func willActivate() {
-        let emojiText = Emoji.One.getString() + Emoji.Two.getString() + Emoji.Three.getString() + Emoji.Four.getString()
+        let emojiText = Emoji.one.getString() + Emoji.two.getString() + Emoji.three.getString() + Emoji.four.getString()
         emojisLabel.setText(emojiText)
     }
     
     @IBAction func playAgain() {
         main!.restart()
-        main!.dismissController()
+        main!.dismiss()
     }
     
     @IBAction func customize() {
-        self.presentControllerWithName("customize", context: self)
+        self.presentController(withName: "customize", context: self)
     }
 }

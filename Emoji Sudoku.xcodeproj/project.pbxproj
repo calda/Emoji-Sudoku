@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E59D2641D96318100F0C380 /* Emoji Sudoku WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2E6628AC1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2E59D2671D96318100F0C380 /* Emoji Sudoku 😎.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2E6628B61AF5D432006E51AC /* Emoji Sudoku 😎.app */; };
 		2E6628891AF5D3F2006E51AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6628881AF5D3F2006E51AC /* AppDelegate.swift */; };
 		2E66288B1AF5D3F2006E51AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E66288A1AF5D3F2006E51AC /* ViewController.swift */; };
 		2E66288E1AF5D3F2006E51AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E66288C1AF5D3F2006E51AC /* Main.storyboard */; };
@@ -15,10 +17,8 @@
 		2E66289F1AF5D3F2006E51AC /* Emoji_SudokuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E66289E1AF5D3F2006E51AC /* Emoji_SudokuTests.swift */; };
 		2E6628B11AF5D432006E51AC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6628B01AF5D432006E51AC /* InterfaceController.swift */; };
 		2E6628B31AF5D432006E51AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E6628B21AF5D432006E51AC /* Images.xcassets */; };
-		2E6628B71AF5D432006E51AC /* Emoji Sudoku 😎.app in Resources */ = {isa = PBXBuildFile; fileRef = 2E6628B61AF5D432006E51AC /* Emoji Sudoku 😎.app */; };
 		2E6628BF1AF5D432006E51AC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6628BD1AF5D432006E51AC /* Interface.storyboard */; };
 		2E6628C11AF5D432006E51AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E6628C01AF5D432006E51AC /* Images.xcassets */; };
-		2E6628C41AF5D432006E51AC /* Emoji Sudoku WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2E6628AC1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2E6628CD1AF5DE01006E51AC /* EmojiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6628CC1AF5DE01006E51AC /* EmojiPicker.swift */; };
 		2E6628CF1AF5F693006E51AC /* SudokuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6628CE1AF5F693006E51AC /* SudokuCell.swift */; };
 		2E9904CC1AF70E40006B3B82 /* s0.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9904CB1AF70E40006B3B82 /* s0.png */; };
@@ -43,6 +43,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2E59D2621D96318100F0C380 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E66287B1AF5D3F2006E51AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E6628AB1AF5D431006E51AC;
+			remoteInfo = "Emoji Sudoku WatchKit Extension";
+		};
+		2E59D2651D96318100F0C380 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E66287B1AF5D3F2006E51AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E6628B51AF5D432006E51AC;
+			remoteInfo = "Emoji Sudoku 😎";
+		};
 		2E6628991AF5D3F2006E51AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2E66287B1AF5D3F2006E51AC /* Project object */;
@@ -50,32 +64,29 @@
 			remoteGlobalIDString = 2E6628821AF5D3F2006E51AC;
 			remoteInfo = "Emoji Sudoku";
 		};
-		2E6628B81AF5D432006E51AC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2E66287B1AF5D3F2006E51AC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2E6628B51AF5D432006E51AC;
-			remoteInfo = "Emoji Sudoku WatchKit App";
-		};
-		2E6628C21AF5D432006E51AC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2E66287B1AF5D3F2006E51AC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2E6628AB1AF5D431006E51AC;
-			remoteInfo = "Emoji Sudoku WatchKit Extension";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2E6628CB1AF5D432006E51AC /* Embed App Extensions */ = {
+		2E59D2681D96318100F0C380 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				2E6628C41AF5D432006E51AC /* Emoji Sudoku WatchKit Extension.appex in Embed App Extensions */,
+				2E59D2641D96318100F0C380 /* Emoji Sudoku WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E59D2691D96318100F0C380 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2E59D2671D96318100F0C380 /* Emoji Sudoku 😎.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -278,12 +289,12 @@
 				2E66287F1AF5D3F2006E51AC /* Sources */,
 				2E6628801AF5D3F2006E51AC /* Frameworks */,
 				2E6628811AF5D3F2006E51AC /* Resources */,
-				2E6628CB1AF5D432006E51AC /* Embed App Extensions */,
+				2E59D2691D96318100F0C380 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2E6628C31AF5D432006E51AC /* PBXTargetDependency */,
+				2E59D2661D96318100F0C380 /* PBXTargetDependency */,
 			);
 			name = "Emoji Sudoku";
 			productName = "Emoji Sudoku";
@@ -319,27 +330,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				2E6628B91AF5D432006E51AC /* PBXTargetDependency */,
 			);
 			name = "Emoji Sudoku WatchKit Extension";
 			productName = "Emoji Sudoku WatchKit Extension";
 			productReference = 2E6628AC1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit-extension";
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		2E6628B51AF5D432006E51AC /* Emoji Sudoku 😎 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E6628C51AF5D432006E51AC /* Build configuration list for PBXNativeTarget "Emoji Sudoku 😎" */;
 			buildPhases = (
 				2E6628B41AF5D432006E51AC /* Resources */,
+				2E59D2681D96318100F0C380 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2E59D2631D96318100F0C380 /* PBXTargetDependency */,
 			);
 			name = "Emoji Sudoku 😎";
 			productName = "Emoji Sudoku WatchKit App";
 			productReference = 2E6628B61AF5D432006E51AC /* Emoji Sudoku 😎.app */;
-			productType = "com.apple.product-type.application.watchapp";
+			productType = "com.apple.product-type.application.watchapp2";
 		};
 /* End PBXNativeTarget section */
 
@@ -347,12 +359,14 @@
 		2E66287B1AF5D3F2006E51AC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Cal Stephens";
 				TargetAttributes = {
 					2E6628821AF5D3F2006E51AC = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = FZ89A5SZ7C;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.iCloud = {
 								enabled = 1;
@@ -361,11 +375,14 @@
 					};
 					2E6628971AF5D3F2006E51AC = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 2E6628821AF5D3F2006E51AC;
 					};
 					2E6628AB1AF5D431006E51AC = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = FZ89A5SZ7C;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.iCloud = {
 								enabled = 1;
@@ -375,6 +392,8 @@
 					2E6628B51AF5D432006E51AC = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = FZ89A5SZ7C;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -438,7 +457,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E6628B31AF5D432006E51AC /* Images.xcassets in Resources */,
-				2E6628B71AF5D432006E51AC /* Emoji Sudoku 😎.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,20 +505,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2E59D2631D96318100F0C380 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E6628AB1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension */;
+			targetProxy = 2E59D2621D96318100F0C380 /* PBXContainerItemProxy */;
+		};
+		2E59D2661D96318100F0C380 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E6628B51AF5D432006E51AC /* Emoji Sudoku 😎 */;
+			targetProxy = 2E59D2651D96318100F0C380 /* PBXContainerItemProxy */;
+		};
 		2E66289A1AF5D3F2006E51AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2E6628821AF5D3F2006E51AC /* Emoji Sudoku */;
 			targetProxy = 2E6628991AF5D3F2006E51AC /* PBXContainerItemProxy */;
-		};
-		2E6628B91AF5D432006E51AC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2E6628B51AF5D432006E51AC /* Emoji Sudoku 😎 */;
-			targetProxy = 2E6628B81AF5D432006E51AC /* PBXContainerItemProxy */;
-		};
-		2E6628C31AF5D432006E51AC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2E6628AB1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension */;
-			targetProxy = 2E6628C21AF5D432006E51AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -545,14 +563,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -589,8 +610,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -609,6 +632,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -622,9 +646,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Emoji Sudoku/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cal.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fa441dc4-23dc-4589-9147-475034842ddd";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=*]" = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -637,8 +663,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Emoji Sudoku/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cal.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fa441dc4-23dc-4589-9147-475034842ddd";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -656,7 +684,9 @@
 				);
 				INFOPLIST_FILE = "Emoji SudokuTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cal.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emoji Sudoku.app/Emoji Sudoku";
 			};
 			name = Debug;
@@ -671,7 +701,9 @@
 				);
 				INFOPLIST_FILE = "Emoji SudokuTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cal.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emoji Sudoku.app/Emoji Sudoku";
 			};
 			name = Release;
@@ -679,38 +711,46 @@
 		2E6628C61AF5D432006E51AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				IBSC_MODULE = Emoji_Sudoku_WatchKit_Extension;
 				INFOPLIST_FILE = "Emoji Sudoku WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cal.Emoji-Sudoku.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
 		2E6628C71AF5D432006E51AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				IBSC_MODULE = Emoji_Sudoku_WatchKit_Extension;
 				INFOPLIST_FILE = "Emoji Sudoku WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cal.Emoji-Sudoku.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fa441dc4-23dc-4589-9147-475034842ddd";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -720,15 +760,21 @@
 				CODE_SIGN_ENTITLEMENTS = "Emoji Sudoku WatchKit Extension/Emoji Sudoku WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Emoji Sudoku WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cal.Emoji-Sudoku.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -738,11 +784,17 @@
 				CODE_SIGN_ENTITLEMENTS = "Emoji Sudoku WatchKit Extension/Emoji Sudoku WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Emoji Sudoku WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cal.Emoji-Sudoku.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "fa441dc4-23dc-4589-9147-475034842ddd";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};

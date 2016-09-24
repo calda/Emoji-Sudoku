@@ -18,7 +18,7 @@ class EmojiPicker : WKInterfaceController {
     
     var main : InterfaceController?
     
-    override func awakeWithContext(context: AnyObject?) {
+    override func awake(withContext context: Any?) {
         main = (context as! InterfaceController)
     }
     
@@ -31,25 +31,25 @@ class EmojiPicker : WKInterfaceController {
         button4.setTitle(EMOJI_4)
     }
     
-    func pressed(emoji: Emoji?) {
+    func pressed(_ emoji: Emoji?) {
         main!.cell[main!.selectedCell.0][main!.selectedCell.1].emoji = emoji
-        self.dismissController()
+        self.pop()
     }
     
     @IBAction func pressed1() {
-        pressed(Emoji.One)
+        pressed(Emoji.one)
     }
     
     @IBAction func pressed2() {
-        pressed(Emoji.Two)
+        pressed(Emoji.two)
     }
     
     @IBAction func pressed3() {
-        pressed(Emoji.Three)
+        pressed(Emoji.three)
     }
     
     @IBAction func pressed4() {
-        pressed(Emoji.Four)
+        pressed(Emoji.four)
     }
     
     @IBAction func pressedClear() {

@@ -27,25 +27,25 @@ class CustomMain : WKInterfaceController {
         button4.setTitle(EMOJI_4)
     }
     
-    func pressed(emoji: Emoji) {
+    func pressed(_ emoji: Emoji) {
         selectedEmoji = emoji
-        self.presentControllerWithName("customPicker", context: self)
+        self.presentController(withName: "customPicker", context: self)
     }
     
     @IBAction func pressed1() {
-        pressed(Emoji.One)
+        pressed(Emoji.one)
     }
     
     @IBAction func pressed2() {
-        pressed(Emoji.Two)
+        pressed(Emoji.two)
     }
     
     @IBAction func pressed3() {
-        pressed(Emoji.Three)
+        pressed(Emoji.three)
     }
     
     @IBAction func pressed4() {
-        pressed(Emoji.Four)
+        pressed(Emoji.four)
     }
     
     @IBAction func randomize() {
@@ -80,13 +80,13 @@ class CustomMain : WKInterfaceController {
         EMOJI_3 = selected[2]
         EMOJI_4 = selected[3]
         
-        let store = NSUbiquitousKeyValueStore.defaultStore()
+        let store = NSUbiquitousKeyValueStore.default()
         store.synchronize()
         
-        store.setString(selected[0], forKey: "EMOJI_1")
-        store.setString(selected[1], forKey: "EMOJI_2")
-        store.setString(selected[2], forKey: "EMOJI_3")
-        store.setString(selected[3], forKey: "EMOJI_4")
+        store.set(selected[0], forKey: "EMOJI_1")
+        store.set(selected[1], forKey: "EMOJI_2")
+        store.set(selected[2], forKey: "EMOJI_3")
+        store.set(selected[3], forKey: "EMOJI_4")
         
         button1.setTitle(EMOJI_1)
         button2.setTitle(EMOJI_2)

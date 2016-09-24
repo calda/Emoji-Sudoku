@@ -15,41 +15,41 @@ var EMOJI_3 = "🔥"
 var EMOJI_4 = "🎉"
 
 enum Emoji {
-    case One, Two, Three, Four
+    case one, two, three, four
     
     func getString() -> String {
         switch(self) {
-            case .One: return EMOJI_1
-            case .Two: return EMOJI_2
-            case .Three: return EMOJI_3
-            case .Four: return EMOJI_4
+            case .one: return EMOJI_1
+            case .two: return EMOJI_2
+            case .three: return EMOJI_3
+            case .four: return EMOJI_4
         }
     }
     
     func getID() -> Int {
         switch(self) {
-        case .One: return 1
-        case .Two: return 2
-        case .Three: return 3
-        case .Four: return 4
+        case .one: return 1
+        case .two: return 2
+        case .three: return 3
+        case .four: return 4
         }
     }
     
-    static func getEmojiConstant(string: String) -> Emoji {
+    static func getEmojiConstant(_ string: String) -> Emoji {
         switch(string) {
-            case EMOJI_1: return .One
-            case EMOJI_2: return .Two
-            case EMOJI_3: return .Three
-            default: return .Four
+            case EMOJI_1: return .one
+            case EMOJI_2: return .two
+            case EMOJI_3: return .three
+            default: return .four
         }
     }
     
-    func inArrayOnce(array: [Emoji?]) -> Bool {
+    func inArrayOnce(_ array: [Emoji?]) -> Bool {
         var count = 0
         for emoji in array {
             if let emoji = emoji {
                 if emoji == self {
-                    count++
+                    count += 1
                 }
             }
         }
@@ -85,21 +85,21 @@ class InterfaceController: WKInterfaceController {
         [SudokuCell(3), SudokuCell(3), SudokuCell(4), SudokuCell(4)]]
     
     var selectedCell = (0, 0)
-    var startTime : NSDate?
+    var startTime : Date?
     
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
     }
 
-    func processTap(col: Int, _ row: Int) {
-        println("(\(col), \(row))")
+    func processTap(_ col: Int, _ row: Int) {
+        print("(\(col), \(row))")
         selectedCell = (col, row)
         if cell[col][row].revealed {
             cell[col][row].pingNoOnButton(buttonMap[col][row]!)
             return
         }
         cell[col][row].setSelectedOnButton(buttonMap[col][row]!)
-        self.presentControllerWithName("picker", context: self)
+        self.pushController(withName: "picker", context: self)
     }
     
     override func willActivate() {
@@ -124,19 +124,19 @@ class InterfaceController: WKInterfaceController {
             populateWithSolution()
             
             //pull custom emoji data from iCloud
-            let store = NSUbiquitousKeyValueStore.defaultStore()
+            let store = NSUbiquitousKeyValueStore.default()
             store.synchronize()
-            if store.stringForKey("EMOJI_1") == nil {
-                store.setString("😎", forKey: "EMOJI_1")
-                store.setString("❤️", forKey: "EMOJI_2")
-                store.setString("🔥", forKey: "EMOJI_3")
-                store.setString("🎉", forKey: "EMOJI_4")
+            if store.string(forKey: "EMOJI_1") == nil {
+                store.set("😎", forKey: "EMOJI_1")
+                store.set("❤️", forKey: "EMOJI_2")
+                store.set("🔥", forKey: "EMOJI_3")
+                store.set("🎉", forKey: "EMOJI_4")
             }
             else {
-                EMOJI_1 = store.stringForKey("EMOJI_1")!
-                EMOJI_2 = store.stringForKey("EMOJI_2")!
-                EMOJI_3 = store.stringForKey("EMOJI_3")!
-                EMOJI_4 = store.stringForKey("EMOJI_4")!
+                EMOJI_1 = store.string(forKey: "EMOJI_1")!
+                EMOJI_2 = store.string(forKey: "EMOJI_2")!
+                EMOJI_3 = store.string(forKey: "EMOJI_3")!
+                EMOJI_4 = store.string(forKey: "EMOJI_4")!
             }
         }
         
@@ -146,13 +146,13 @@ class InterfaceController: WKInterfaceController {
             for col in 0...3 {
                 cell[row][col].renderOnButton(buttonMap[row][col]!)
                 if cell[row][col].emoji != nil && !cell[row][col].revealed {
-                    userModifiedCount++
+                    userModifiedCount += 1
                 }
             }
         }
         
         if userModifiedCount == 0 {
-            startTime = NSDate()
+            startTime = Date()
         }
         
         if validateGrid() {
@@ -164,9 +164,9 @@ class InterfaceController: WKInterfaceController {
             }
             
             //wait a sec and then show victory screen
-            let time = dispatch_time(DISPATCH_TIME_NOW, Int64(1.0 * Double(NSEC_PER_SEC)))
-            dispatch_after(time, dispatch_get_main_queue(), {
-                self.presentControllerWithName("victory", context: self)
+            let time = DispatchTime.now() + Double(Int64(1.0 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
+            DispatchQueue.main.asyncAfter(deadline: time, execute: {
+                self.pushController(withName: "victory", context: self)
             })
         }
 
@@ -176,12 +176,12 @@ class InterfaceController: WKInterfaceController {
     
     func populateWithSolution() {
         
-        func randomEmojiExcluding(exclude: [SudokuCell]) -> Emoji {
-            var allEmoji : [Emoji] = [.One, .Two, .Three, .Four]
+        func randomEmojiExcluding(_ exclude: [SudokuCell]) -> Emoji {
+            var allEmoji : [Emoji] = [.one, .two, .three, .four]
             for cell in exclude {
                 for i in 0..<allEmoji.count {
                     if allEmoji[i] == cell.solutionEmoji! {
-                        allEmoji.removeAtIndex(i)
+                        allEmoji.remove(at: i)
                         break
                     }
                 }
@@ -194,10 +194,9 @@ class InterfaceController: WKInterfaceController {
             return allEmoji[random]
         }
         
-        func doFor(cell: SudokuCell, #exclude: [SudokuCell]) -> Emoji {
+        func doFor(_ cell: SudokuCell, exclude: [SudokuCell]) {
             let random = randomEmojiExcluding(exclude)
             cell.solutionEmoji = random
-            return random
         }
         
         //populate
@@ -235,7 +234,7 @@ class InterfaceController: WKInterfaceController {
             let reveal = Int(arc4random_uniform(UInt32(allCells.count - 1)))
             allCells[reveal].revealed = true
             allCells[reveal].emoji = allCells[reveal].solutionEmoji
-            allCells.removeAtIndex(reveal)
+            allCells.remove(at: reveal)
         }
         
         if !validateSolution() {
@@ -341,12 +340,12 @@ class InterfaceController: WKInterfaceController {
     }
     
     
-    func groupIsValid(group: [Emoji?]) -> Bool {
+    func groupIsValid(_ group: [Emoji?]) -> Bool {
         if group.count != 4 { return false }
-        let one = Emoji.One.inArrayOnce(group)
-        let two = Emoji.Two.inArrayOnce(group)
-        let three = Emoji.Three.inArrayOnce(group)
-        let four = Emoji.Four.inArrayOnce(group)
+        let one = Emoji.one.inArrayOnce(group)
+        let two = Emoji.two.inArrayOnce(group)
+        let three = Emoji.three.inArrayOnce(group)
+        let four = Emoji.four.inArrayOnce(group)
         return one && two && three && four
     }
     
@@ -369,7 +368,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func presentCustomizeController() {
-        self.presentControllerWithName("customize", context: self)
+        self.presentController(withName: "customize", context: self)
     }
     
     @IBAction func pressed00() {

@@ -24,37 +24,37 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
     var currentPage = 0
     
     func loop() {
-        currentPage++
+        currentPage += 1
         
         if self.currentPage == 15 {
             //loop back around
             self.currentPage = 1
-            self.screenView.scrollToItemAtIndexPath(NSIndexPath(forItem: 0, inSection: 0), atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: false)
+            self.screenView.scrollToItem(at: IndexPath(item: 0, section: 0), at: UICollectionViewScrollPosition.centeredHorizontally, animated: false)
         }
         
-        screenView.scrollToItemAtIndexPath(NSIndexPath(forItem: currentPage, inSection: 0), atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: true)
+        screenView.scrollToItem(at: IndexPath(item: currentPage, section: 0), at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
         delay(2.5) {
             self.loop()
         }
     }
 
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 15
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let bundle = NSBundle.mainBundle()
-        let imagePath = bundle.pathForResource("s\(indexPath.item)", ofType: "png")
-        let data = NSData(contentsOfFile: imagePath!)
+        let bundle = Bundle.main
+        let imagePath = bundle.path(forResource: "s\((indexPath as NSIndexPath).item)", ofType: "png")
+        let data = try? Data(contentsOf: URL(fileURLWithPath: imagePath!))
         let image = UIImage(data: data!)
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("screenshot", forIndexPath: indexPath) as! WatchImageCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "screenshot", for: indexPath) as! WatchImageCell
         cell.decorate(image)
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return collectionView.frame.size
     }
     
@@ -67,14 +67,14 @@ class WatchImageCell : UICollectionViewCell {
     
     @IBOutlet weak var screenshot: UIImageView!
     
-    func decorate(image: UIImage?) {
+    func decorate(_ image: UIImage?) {
         screenshot.image = image
     }
     
 }
 
-func delay(delay:Double, closure:()->()) {
-    let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay * Double(NSEC_PER_SEC)))
-    dispatch_after(time, dispatch_get_main_queue(), closure)
+func delay(_ delay:Double, closure:@escaping ()->()) {
+    let time = DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
+    DispatchQueue.main.asyncAfter(deadline: time, execute: closure)
 }
 

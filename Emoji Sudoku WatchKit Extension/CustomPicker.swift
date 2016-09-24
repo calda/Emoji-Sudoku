@@ -26,12 +26,12 @@ class CustomPicker: WKInterfaceController {
         ["👺", "🙏", "👅", "🍭"]
     ]
     
-    override func awakeWithContext(context: AnyObject?) {
+    override func awake(withContext context: Any?) {
         main = (context as! CustomMain)
-        super.awakeWithContext(context)
+        super.awake(withContext: context)
     }
     
-    func processTap(col: Int, _ row: Int) {
+    func processTap(_ col: Int, _ row: Int) {
         let selectedEmoji = emojiMap[col][row]
         
         let otherEmojis = [EMOJI_1, EMOJI_2, EMOJI_3, EMOJI_4]
@@ -44,25 +44,25 @@ class CustomPicker: WKInterfaceController {
         
         if isNewToSet {
             
-            let store = NSUbiquitousKeyValueStore.defaultStore()
+            let store = NSUbiquitousKeyValueStore.default()
             store.synchronize()
             
-            if main!.selectedEmoji! == .One {
+            if main!.selectedEmoji! == .one {
                 EMOJI_1 = selectedEmoji
-                store.setString(selectedEmoji, forKey: "EMOJI_1")
-            } else if main!.selectedEmoji! == .Two {
+                store.set(selectedEmoji, forKey: "EMOJI_1")
+            } else if main!.selectedEmoji! == .two {
                 EMOJI_2 = selectedEmoji
-                store.setString(selectedEmoji, forKey: "EMOJI_2")
-            } else if main!.selectedEmoji! == .Three {
+                store.set(selectedEmoji, forKey: "EMOJI_2")
+            } else if main!.selectedEmoji! == .three {
                 EMOJI_3 = selectedEmoji
-                store.setString(selectedEmoji, forKey: "EMOJI_3")
-            } else if main!.selectedEmoji! == .Four {
+                store.set(selectedEmoji, forKey: "EMOJI_3")
+            } else if main!.selectedEmoji! == .four {
                 EMOJI_4 = selectedEmoji
-                store.setString(selectedEmoji, forKey: "EMOJI_4")
+                store.set(selectedEmoji, forKey: "EMOJI_4")
             }
         }
         
-        main!.dismissController()
+        main!.dismiss()
         
     }
     
