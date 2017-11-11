@@ -14,23 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2E6628821AF5D3F2006E51AC"
-               BuildableName = "Emoji Sudoku.app"
-               BlueprintName = "Emoji Sudoku"
+               BlueprintIdentifier = "2E6628B51AF5D432006E51AC"
+               BuildableName = "Emoji Sudoku &#x1f60e;.app"
+               BlueprintName = "Emoji Sudoku &#x1f60e;"
                ReferencedContainer = "container:Emoji Sudoku.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2E6628971AF5D3F2006E51AC"
-               BuildableName = "Emoji SudokuTests.xctest"
-               BlueprintName = "Emoji SudokuTests"
+               BlueprintIdentifier = "2E6628821AF5D3F2006E51AC"
+               BuildableName = "Emoji Sudoku.app"
+               BlueprintName = "Emoji Sudoku"
                ReferencedContainer = "container:Emoji Sudoku.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,23 +43,13 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2E6628971AF5D3F2006E51AC"
-               BuildableName = "Emoji SudokuTests.xctest"
-               BlueprintName = "Emoji SudokuTests"
-               ReferencedContainer = "container:Emoji Sudoku.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2E6628821AF5D3F2006E51AC"
-            BuildableName = "Emoji Sudoku.app"
-            BlueprintName = "Emoji Sudoku"
+            BlueprintIdentifier = "2E6628B51AF5D432006E51AC"
+            BuildableName = "Emoji Sudoku &#x1f60e;.app"
+            BlueprintName = "Emoji Sudoku &#x1f60e;"
             ReferencedContainer = "container:Emoji Sudoku.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -77,16 +67,27 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Emoji Sudoku">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2E6628821AF5D3F2006E51AC"
-            BuildableName = "Emoji Sudoku.app"
-            BlueprintName = "Emoji Sudoku"
+            BlueprintIdentifier = "2E6628B51AF5D432006E51AC"
+            BuildableName = "Emoji Sudoku &#x1f60e;.app"
+            BlueprintName = "Emoji Sudoku &#x1f60e;"
             ReferencedContainer = "container:Emoji Sudoku.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2E6628B51AF5D432006E51AC"
+            BuildableName = "Emoji Sudoku &#x1f60e;.app"
+            BlueprintName = "Emoji Sudoku &#x1f60e;"
+            ReferencedContainer = "container:Emoji Sudoku.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -96,16 +97,27 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Emoji Sudoku">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2E6628821AF5D3F2006E51AC"
-            BuildableName = "Emoji Sudoku.app"
-            BlueprintName = "Emoji Sudoku"
+            BlueprintIdentifier = "2E6628B51AF5D432006E51AC"
+            BuildableName = "Emoji Sudoku &#x1f60e;.app"
+            BlueprintName = "Emoji Sudoku &#x1f60e;"
             ReferencedContainer = "container:Emoji Sudoku.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2E6628B51AF5D432006E51AC"
+            BuildableName = "Emoji Sudoku &#x1f60e;.app"
+            BlueprintName = "Emoji Sudoku &#x1f60e;"
+            ReferencedContainer = "container:Emoji Sudoku.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

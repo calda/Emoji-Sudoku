@@ -20,10 +20,10 @@ class CustomPicker: WKInterfaceController {
         ["💀", "👾", "🐔", "🌚"],
         ["🍆", "🌎", "🍑", "💔"],
         ["🚙", "🔮", "🙌", "😘"],
-        ["🚨", "🇬🇧", "🏊", "👑"],
+        ["🚨", "🇬🇧", "🤠", "👑"],
         ["🎃", "🎊", "🎯", "💸"],
-        ["💉", "💮", "👌", "💪"],
-        ["👺", "🙏", "👅", "🍭"]
+        ["🤖", "😩", "👌", "💪"],
+        ["👺", "🙏", "👅", "💦"]
     ]
     
     override func awake(withContext context: Any?) {
@@ -44,26 +44,22 @@ class CustomPicker: WKInterfaceController {
         
         if isNewToSet {
             
-            let store = NSUbiquitousKeyValueStore.default()
-            store.synchronize()
-            
             if main!.selectedEmoji! == .one {
                 EMOJI_1 = selectedEmoji
-                store.set(selectedEmoji, forKey: "EMOJI_1")
+                UserDefaults.standard.set(selectedEmoji, forKey: "EMOJI_1")
             } else if main!.selectedEmoji! == .two {
                 EMOJI_2 = selectedEmoji
-                store.set(selectedEmoji, forKey: "EMOJI_2")
+                UserDefaults.standard.set(selectedEmoji, forKey: "EMOJI_2")
             } else if main!.selectedEmoji! == .three {
                 EMOJI_3 = selectedEmoji
-                store.set(selectedEmoji, forKey: "EMOJI_3")
+                UserDefaults.standard.set(selectedEmoji, forKey: "EMOJI_3")
             } else if main!.selectedEmoji! == .four {
                 EMOJI_4 = selectedEmoji
-                store.set(selectedEmoji, forKey: "EMOJI_4")
+                UserDefaults.standard.set(selectedEmoji, forKey: "EMOJI_4")
             }
         }
         
-        main!.dismiss()
-        
+        pop()
     }
     
     @IBAction func pressed00() {

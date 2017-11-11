@@ -123,20 +123,17 @@ class InterfaceController: WKInterfaceController {
             buttonMap[3][3] = b33
             populateWithSolution()
             
-            //pull custom emoji data from iCloud
-            let store = NSUbiquitousKeyValueStore.default()
-            store.synchronize()
-            if store.string(forKey: "EMOJI_1") == nil {
-                store.set("😎", forKey: "EMOJI_1")
-                store.set("❤️", forKey: "EMOJI_2")
-                store.set("🔥", forKey: "EMOJI_3")
-                store.set("🎉", forKey: "EMOJI_4")
+            if UserDefaults.standard.string(forKey: "EMOJI_1") == nil {
+                UserDefaults.standard.set("😎", forKey: "EMOJI_1")
+                UserDefaults.standard.set("❤️", forKey: "EMOJI_2")
+                UserDefaults.standard.set("🔥", forKey: "EMOJI_3")
+                UserDefaults.standard.set("🎉", forKey: "EMOJI_4")
             }
             else {
-                EMOJI_1 = store.string(forKey: "EMOJI_1")!
-                EMOJI_2 = store.string(forKey: "EMOJI_2")!
-                EMOJI_3 = store.string(forKey: "EMOJI_3")!
-                EMOJI_4 = store.string(forKey: "EMOJI_4")!
+                EMOJI_1 = UserDefaults.standard.string(forKey: "EMOJI_1")!
+                EMOJI_2 = UserDefaults.standard.string(forKey: "EMOJI_2")!
+                EMOJI_3 = UserDefaults.standard.string(forKey: "EMOJI_3")!
+                EMOJI_4 = UserDefaults.standard.string(forKey: "EMOJI_4")!
             }
         }
         
@@ -368,7 +365,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func presentCustomizeController() {
-        self.presentController(withName: "customize", context: self)
+        self.pushController(withName: "customize", context: self)
     }
     
     @IBAction func pressed00() {
@@ -436,27 +433,4 @@ class InterfaceController: WKInterfaceController {
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

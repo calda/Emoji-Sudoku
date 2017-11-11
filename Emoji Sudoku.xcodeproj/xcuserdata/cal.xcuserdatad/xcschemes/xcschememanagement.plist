@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>Emoji Sudoku WatchKit Extension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Emoji Sudoku 😎.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Emoji Sudoku.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -28,6 +38,11 @@
 			<true/>
 		</dict>
 		<key>2E6628971AF5D3F2006E51AC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2E6628AB1AF5D431006E51AC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

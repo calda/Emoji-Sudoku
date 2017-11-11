@@ -29,7 +29,7 @@ class CustomMain : WKInterfaceController {
     
     func pressed(_ emoji: Emoji) {
         selectedEmoji = emoji
-        self.presentController(withName: "customPicker", context: self)
+        self.pushController(withName: "customPicker", context: self)
     }
     
     @IBAction func pressed1() {
@@ -80,13 +80,10 @@ class CustomMain : WKInterfaceController {
         EMOJI_3 = selected[2]
         EMOJI_4 = selected[3]
         
-        let store = NSUbiquitousKeyValueStore.default()
-        store.synchronize()
-        
-        store.set(selected[0], forKey: "EMOJI_1")
-        store.set(selected[1], forKey: "EMOJI_2")
-        store.set(selected[2], forKey: "EMOJI_3")
-        store.set(selected[3], forKey: "EMOJI_4")
+        UserDefaults.standard.set(selected[0], forKey: "EMOJI_1")
+        UserDefaults.standard.set(selected[1], forKey: "EMOJI_2")
+        UserDefaults.standard.set(selected[2], forKey: "EMOJI_3")
+        UserDefaults.standard.set(selected[3], forKey: "EMOJI_4")
         
         button1.setTitle(EMOJI_1)
         button2.setTitle(EMOJI_2)
