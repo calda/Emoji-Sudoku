@@ -20,6 +20,8 @@
 		2E59D2641D96318100F0C380 /* Emoji Sudoku WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2E6628AC1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2E59D2671D96318100F0C380 /* Emoji Sudoku 😎.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2E6628B61AF5D432006E51AC /* Emoji Sudoku 😎.app */; };
 		2E61771D1FB7EB5B0057AE2C /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E61771C1FB7EB5B0057AE2C /* Launch.storyboard */; };
+		2E6177211FB80E750057AE2C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E61771F1FB80E740057AE2C /* Crashlytics.framework */; };
+		2E6177221FB80E750057AE2C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6177201FB80E740057AE2C /* Fabric.framework */; };
 		2E6628891AF5D3F2006E51AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6628881AF5D3F2006E51AC /* AppDelegate.swift */; };
 		2E66288B1AF5D3F2006E51AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E66288A1AF5D3F2006E51AC /* ViewController.swift */; };
 		2E66288E1AF5D3F2006E51AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E66288C1AF5D3F2006E51AC /* Main.storyboard */; };
@@ -97,6 +99,8 @@
 		2E3FB8FD1FB7E8AC00085EAB /* Watch Interface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Watch Interface.xml"; sourceTree = "<group>"; };
 		2E3FB8FE1FB7E8AC00085EAB /* EmojiPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiPicker.swift; sourceTree = "<group>"; };
 		2E61771C1FB7EB5B0057AE2C /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		2E61771F1FB80E740057AE2C /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		2E6177201FB80E740057AE2C /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		2E6628831AF5D3F2006E51AC /* Emoji Sudoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Sudoku.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6628871AF5D3F2006E51AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E6628881AF5D3F2006E51AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,7 +128,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E6177211FB80E750057AE2C /* Crashlytics.framework in Frameworks */,
 				2E3FB8EA1FB7E55F00085EAB /* WatchKit_iOS.framework in Frameworks */,
+				2E6177221FB80E750057AE2C /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +158,13 @@
 			path = "WatchKit app";
 			sourceTree = "<group>";
 		};
+		2E6177231FB80F160057AE2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2E66287A1AF5D3F2006E51AC = {
 			isa = PBXGroup;
 			children = (
@@ -159,7 +172,10 @@
 				2E6628AD1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension */,
 				2E6628BA1AF5D432006E51AC /* Emoji Sudoku WatchKit App */,
 				2E6628841AF5D3F2006E51AC /* Products */,
+				2E61771F1FB80E740057AE2C /* Crashlytics.framework */,
+				2E6177201FB80E740057AE2C /* Fabric.framework */,
 				2E3FB8E91FB7E55E00085EAB /* WatchKit_iOS.framework */,
+				2E6177231FB80F160057AE2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -249,6 +265,7 @@
 				2E6628811AF5D3F2006E51AC /* Resources */,
 				2E59D2691D96318100F0C380 /* Embed Watch Content */,
 				2E3FB8ED1FB7E56400085EAB /* Embed Frameworks */,
+				2E61771E1FB80E560057AE2C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -383,6 +400,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E61771E1FB80E560057AE2C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run d0baaa4b39cc862e773fe2d1a007410a48ac3008 6517af0baf8dacbafc2f24832b627c05c23d906bae0195508bf1692cd9718df5";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E66287F1AF5D3F2006E51AC /* Sources */ = {
@@ -557,6 +590,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Emoji Sudoku/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -581,6 +615,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Emoji Sudoku/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -649,6 +684,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -673,6 +712,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Emoji Sudoku WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cal.Emoji-Sudoku.watchkitapp.watchkitextension";
