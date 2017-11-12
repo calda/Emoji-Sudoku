@@ -1,0 +1,4 @@
+framework module WatchKit_iOS {
+    header "WatchKit_iOS-Swift.h"
+    requires objc
+}
