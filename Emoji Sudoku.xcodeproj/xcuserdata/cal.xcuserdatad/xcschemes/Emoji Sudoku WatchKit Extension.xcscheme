@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2E6628B51AF5D432006E51AC"
-               BuildableName = "Emoji Sudoku &#x1f60e;.app"
-               BlueprintName = "Emoji Sudoku &#x1f60e;"
+               BuildableName = "Emoji Sudoku Watch.app"
+               BlueprintName = "Emoji Sudoku Watch"
                ReferencedContainer = "container:Emoji Sudoku.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

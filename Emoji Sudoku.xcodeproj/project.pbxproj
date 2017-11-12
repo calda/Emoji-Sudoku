@@ -7,21 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E3FB8EA1FB7E55F00085EAB /* WatchKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3FB8E91FB7E55E00085EAB /* WatchKit_iOS.framework */; };
-		2E3FB8EC1FB7E56400085EAB /* WatchKit_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3FB8E91FB7E55E00085EAB /* WatchKit_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2E3FB8F61FB7E86500085EAB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6628B01AF5D432006E51AC /* InterfaceController.swift */; };
 		2E3FB9041FB7E8AC00085EAB /* Watch Interface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2E3FB8FD1FB7E8AC00085EAB /* Watch Interface.xml */; };
-		2E3FB90E1FB7EA1400085EAB /* SudokuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3FB8F81FB7E8AC00085EAB /* SudokuCell.swift */; };
-		2E3FB90F1FB7EA1400085EAB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3FB8F91FB7E8AC00085EAB /* InterfaceController.swift */; };
-		2E3FB9101FB7EA1400085EAB /* VictoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3FB8FA1FB7E8AC00085EAB /* VictoryScreen.swift */; };
-		2E3FB9111FB7EA1400085EAB /* CustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3FB8FB1FB7E8AC00085EAB /* CustomPicker.swift */; };
-		2E3FB9121FB7EA1400085EAB /* CustomMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3FB8FC1FB7E8AC00085EAB /* CustomMain.swift */; };
-		2E3FB9131FB7EA1400085EAB /* EmojiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3FB8FE1FB7E8AC00085EAB /* EmojiPicker.swift */; };
 		2E59D2641D96318100F0C380 /* Emoji Sudoku WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2E6628AC1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2E59D2671D96318100F0C380 /* Emoji Sudoku 😎.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2E6628B61AF5D432006E51AC /* Emoji Sudoku 😎.app */; };
+		2E59D2671D96318100F0C380 /* Emoji Sudoku Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2E6628B61AF5D432006E51AC /* Emoji Sudoku Watch.app */; };
 		2E61771D1FB7EB5B0057AE2C /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E61771C1FB7EB5B0057AE2C /* Launch.storyboard */; };
 		2E6177211FB80E750057AE2C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E61771F1FB80E740057AE2C /* Crashlytics.framework */; };
 		2E6177221FB80E750057AE2C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6177201FB80E740057AE2C /* Fabric.framework */; };
+		2E61772A1FB813760057AE2C /* WatchKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3FB8E91FB7E55E00085EAB /* WatchKit_iOS.framework */; };
 		2E6628891AF5D3F2006E51AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6628881AF5D3F2006E51AC /* AppDelegate.swift */; };
 		2E66288B1AF5D3F2006E51AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E66288A1AF5D3F2006E51AC /* ViewController.swift */; };
 		2E66288E1AF5D3F2006E51AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E66288C1AF5D3F2006E51AC /* Main.storyboard */; };
@@ -31,6 +24,12 @@
 		2E6628C11AF5D432006E51AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E6628C01AF5D432006E51AC /* Images.xcassets */; };
 		2E6628CD1AF5DE01006E51AC /* EmojiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6628CC1AF5DE01006E51AC /* EmojiPicker.swift */; };
 		2E6628CF1AF5F693006E51AC /* SudokuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6628CE1AF5F693006E51AC /* SudokuCell.swift */; };
+		2EAA33AE1FB81E8800509C00 /* SudokuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA33A81FB81E8700509C00 /* SudokuCell.swift */; };
+		2EAA33AF1FB81E8800509C00 /* VictoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA33A91FB81E8700509C00 /* VictoryScreen.swift */; };
+		2EAA33B01FB81E8800509C00 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA33AA1FB81E8700509C00 /* InterfaceController.swift */; };
+		2EAA33B11FB81E8800509C00 /* EmojiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA33AB1FB81E8700509C00 /* EmojiPicker.swift */; };
+		2EAA33B21FB81E8800509C00 /* CustomMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA33AC1FB81E8700509C00 /* CustomMain.swift */; };
+		2EAA33B31FB81E8800509C00 /* CustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA33AD1FB81E8800509C00 /* CustomPicker.swift */; };
 		2EC6BB541AF6B2D800AE8F19 /* VictoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6BB531AF6B2D800AE8F19 /* VictoryScreen.swift */; };
 		2EC6BB561AF6BA6300AE8F19 /* CustomMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6BB551AF6BA6300AE8F19 /* CustomMain.swift */; };
 		2EC6BB581AF6BB1400AE8F19 /* CustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6BB571AF6BB1400AE8F19 /* CustomPicker.swift */; };
@@ -54,17 +53,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2E3FB8ED1FB7E56400085EAB /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				2E3FB8EC1FB7E56400085EAB /* WatchKit_iOS.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2E59D2681D96318100F0C380 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,7 +70,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				2E59D2671D96318100F0C380 /* Emoji Sudoku 😎.app in Embed Watch Content */,
+				2E59D2671D96318100F0C380 /* Emoji Sudoku Watch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,13 +79,7 @@
 
 /* Begin PBXFileReference section */
 		2E3FB8E91FB7E55E00085EAB /* WatchKit_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit_iOS.framework; path = Carthage/Build/iOS/WatchKit_iOS.framework; sourceTree = "<group>"; };
-		2E3FB8F81FB7E8AC00085EAB /* SudokuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SudokuCell.swift; sourceTree = "<group>"; };
-		2E3FB8F91FB7E8AC00085EAB /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		2E3FB8FA1FB7E8AC00085EAB /* VictoryScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VictoryScreen.swift; sourceTree = "<group>"; };
-		2E3FB8FB1FB7E8AC00085EAB /* CustomPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPicker.swift; sourceTree = "<group>"; };
-		2E3FB8FC1FB7E8AC00085EAB /* CustomMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMain.swift; sourceTree = "<group>"; };
 		2E3FB8FD1FB7E8AC00085EAB /* Watch Interface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Watch Interface.xml"; sourceTree = "<group>"; };
-		2E3FB8FE1FB7E8AC00085EAB /* EmojiPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiPicker.swift; sourceTree = "<group>"; };
 		2E61771C1FB7EB5B0057AE2C /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		2E61771F1FB80E740057AE2C /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		2E6177201FB80E740057AE2C /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
@@ -111,16 +93,21 @@
 		2E6628AF1AF5D432006E51AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E6628B01AF5D432006E51AC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		2E6628B21AF5D432006E51AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2E6628B61AF5D432006E51AC /* Emoji Sudoku 😎.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Sudoku 😎.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E6628B61AF5D432006E51AC /* Emoji Sudoku Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Sudoku Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6628BC1AF5D432006E51AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E6628BE1AF5D432006E51AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		2E6628C01AF5D432006E51AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E6628CC1AF5DE01006E51AC /* EmojiPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiPicker.swift; sourceTree = "<group>"; };
 		2E6628CE1AF5F693006E51AC /* SudokuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SudokuCell.swift; sourceTree = "<group>"; };
+		2EAA33A81FB81E8700509C00 /* SudokuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SudokuCell.swift; sourceTree = "<group>"; };
+		2EAA33A91FB81E8700509C00 /* VictoryScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VictoryScreen.swift; sourceTree = "<group>"; };
+		2EAA33AA1FB81E8700509C00 /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2EAA33AB1FB81E8700509C00 /* EmojiPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiPicker.swift; sourceTree = "<group>"; };
+		2EAA33AC1FB81E8700509C00 /* CustomMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMain.swift; sourceTree = "<group>"; };
+		2EAA33AD1FB81E8800509C00 /* CustomPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPicker.swift; sourceTree = "<group>"; };
 		2EC6BB531AF6B2D800AE8F19 /* VictoryScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VictoryScreen.swift; sourceTree = "<group>"; };
 		2EC6BB551AF6BA6300AE8F19 /* CustomMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMain.swift; sourceTree = "<group>"; };
 		2EC6BB571AF6BB1400AE8F19 /* CustomPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPicker.swift; sourceTree = "<group>"; };
-		2EC6BB5C1AF6D0D500AE8F19 /* Emoji Sudoku WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Emoji Sudoku WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +116,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E6177211FB80E750057AE2C /* Crashlytics.framework in Frameworks */,
-				2E3FB8EA1FB7E55F00085EAB /* WatchKit_iOS.framework in Frameworks */,
+				2E61772A1FB813760057AE2C /* WatchKit_iOS.framework in Frameworks */,
 				2E6177221FB80E750057AE2C /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,12 +135,12 @@
 			isa = PBXGroup;
 			children = (
 				2E3FB8FD1FB7E8AC00085EAB /* Watch Interface.xml */,
-				2E3FB8F81FB7E8AC00085EAB /* SudokuCell.swift */,
-				2E3FB8F91FB7E8AC00085EAB /* InterfaceController.swift */,
-				2E3FB8FA1FB7E8AC00085EAB /* VictoryScreen.swift */,
-				2E3FB8FB1FB7E8AC00085EAB /* CustomPicker.swift */,
-				2E3FB8FC1FB7E8AC00085EAB /* CustomMain.swift */,
-				2E3FB8FE1FB7E8AC00085EAB /* EmojiPicker.swift */,
+				2EAA33AC1FB81E8700509C00 /* CustomMain.swift */,
+				2EAA33AD1FB81E8800509C00 /* CustomPicker.swift */,
+				2EAA33AB1FB81E8700509C00 /* EmojiPicker.swift */,
+				2EAA33AA1FB81E8700509C00 /* InterfaceController.swift */,
+				2EAA33A81FB81E8700509C00 /* SudokuCell.swift */,
+				2EAA33A91FB81E8700509C00 /* VictoryScreen.swift */,
 			);
 			path = "WatchKit app";
 			sourceTree = "<group>";
@@ -184,7 +171,7 @@
 			children = (
 				2E6628831AF5D3F2006E51AC /* Emoji Sudoku.app */,
 				2E6628AC1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension.appex */,
-				2E6628B61AF5D432006E51AC /* Emoji Sudoku 😎.app */,
+				2E6628B61AF5D432006E51AC /* Emoji Sudoku Watch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,7 +201,6 @@
 		2E6628AD1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				2EC6BB5C1AF6D0D500AE8F19 /* Emoji Sudoku WatchKit Extension.entitlements */,
 				2E6628B01AF5D432006E51AC /* InterfaceController.swift */,
 				2E6628CE1AF5F693006E51AC /* SudokuCell.swift */,
 				2E6628CC1AF5DE01006E51AC /* EmojiPicker.swift */,
@@ -264,8 +250,8 @@
 				2E6628801AF5D3F2006E51AC /* Frameworks */,
 				2E6628811AF5D3F2006E51AC /* Resources */,
 				2E59D2691D96318100F0C380 /* Embed Watch Content */,
-				2E3FB8ED1FB7E56400085EAB /* Embed Frameworks */,
 				2E61771E1FB80E560057AE2C /* ShellScript */,
+				2E6177291FB813070057AE2C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -294,9 +280,9 @@
 			productReference = 2E6628AC1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
-		2E6628B51AF5D432006E51AC /* Emoji Sudoku 😎 */ = {
+		2E6628B51AF5D432006E51AC /* Emoji Sudoku Watch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E6628C51AF5D432006E51AC /* Build configuration list for PBXNativeTarget "Emoji Sudoku 😎" */;
+			buildConfigurationList = 2E6628C51AF5D432006E51AC /* Build configuration list for PBXNativeTarget "Emoji Sudoku Watch" */;
 			buildPhases = (
 				2E6628B41AF5D432006E51AC /* Resources */,
 				2E59D2681D96318100F0C380 /* Embed App Extensions */,
@@ -306,9 +292,9 @@
 			dependencies = (
 				2E59D2631D96318100F0C380 /* PBXTargetDependency */,
 			);
-			name = "Emoji Sudoku 😎";
+			name = "Emoji Sudoku Watch";
 			productName = "Emoji Sudoku WatchKit App";
-			productReference = 2E6628B61AF5D432006E51AC /* Emoji Sudoku 😎.app */;
+			productReference = 2E6628B61AF5D432006E51AC /* Emoji Sudoku Watch.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 /* End PBXNativeTarget section */
@@ -365,7 +351,7 @@
 			targets = (
 				2E6628821AF5D3F2006E51AC /* Emoji Sudoku */,
 				2E6628AB1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension */,
-				2E6628B51AF5D432006E51AC /* Emoji Sudoku 😎 */,
+				2E6628B51AF5D432006E51AC /* Emoji Sudoku Watch */,
 			);
 		};
 /* End PBXProject section */
@@ -415,6 +401,21 @@
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run d0baaa4b39cc862e773fe2d1a007410a48ac3008 6517af0baf8dacbafc2f24832b627c05c23d906bae0195508bf1692cd9718df5";
 		};
+		2E6177291FB813070057AE2C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/WatchKit_iOS.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/WatchKit_iOS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -422,13 +423,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EAA33B01FB81E8800509C00 /* InterfaceController.swift in Sources */,
 				2E66288B1AF5D3F2006E51AC /* ViewController.swift in Sources */,
-				2E3FB90F1FB7EA1400085EAB /* InterfaceController.swift in Sources */,
-				2E3FB9111FB7EA1400085EAB /* CustomPicker.swift in Sources */,
-				2E3FB90E1FB7EA1400085EAB /* SudokuCell.swift in Sources */,
-				2E3FB9101FB7EA1400085EAB /* VictoryScreen.swift in Sources */,
-				2E3FB9121FB7EA1400085EAB /* CustomMain.swift in Sources */,
-				2E3FB9131FB7EA1400085EAB /* EmojiPicker.swift in Sources */,
+				2EAA33AE1FB81E8800509C00 /* SudokuCell.swift in Sources */,
+				2EAA33AF1FB81E8800509C00 /* VictoryScreen.swift in Sources */,
+				2EAA33B11FB81E8800509C00 /* EmojiPicker.swift in Sources */,
+				2EAA33B21FB81E8800509C00 /* CustomMain.swift in Sources */,
+				2EAA33B31FB81E8800509C00 /* CustomPicker.swift in Sources */,
 				2E6628891AF5D3F2006E51AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,7 +457,7 @@
 		};
 		2E59D2661D96318100F0C380 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2E6628B51AF5D432006E51AC /* Emoji Sudoku 😎 */;
+			target = 2E6628B51AF5D432006E51AC /* Emoji Sudoku Watch */;
 			targetProxy = 2E59D2651D96318100F0C380 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -621,7 +622,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "";
-				"OTHER_SWIFT_FLAGS[arch=*]" = iOS;
+				"OTHER_SWIFT_FLAGS[arch=*]" = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cal.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -649,7 +650,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
@@ -671,7 +672,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
@@ -751,7 +752,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E6628C51AF5D432006E51AC /* Build configuration list for PBXNativeTarget "Emoji Sudoku 😎" */ = {
+		2E6628C51AF5D432006E51AC /* Build configuration list for PBXNativeTarget "Emoji Sudoku Watch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E6628C61AF5D432006E51AC /* Debug */,
