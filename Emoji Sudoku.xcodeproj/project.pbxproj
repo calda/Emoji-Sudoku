@@ -20,25 +20,9 @@
 		2E6628C11AF5D432006E51AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E6628C01AF5D432006E51AC /* Images.xcassets */; };
 		2E6628CD1AF5DE01006E51AC /* EmojiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6628CC1AF5DE01006E51AC /* EmojiPicker.swift */; };
 		2E6628CF1AF5F693006E51AC /* SudokuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6628CE1AF5F693006E51AC /* SudokuCell.swift */; };
-		2E9904CC1AF70E40006B3B82 /* s0.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9904CB1AF70E40006B3B82 /* s0.png */; };
-		2E9904DB1AF70EDB006B3B82 /* s1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9904CD1AF70EDB006B3B82 /* s1.png */; };
-		2E9904DC1AF70EDB006B3B82 /* s2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9904CE1AF70EDB006B3B82 /* s2.png */; };
-		2E9904DD1AF70EDB006B3B82 /* s3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9904CF1AF70EDB006B3B82 /* s3.png */; };
-		2E9904DE1AF70EDB006B3B82 /* s4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9904D01AF70EDB006B3B82 /* s4.png */; };
-		2E9904DF1AF70EDB006B3B82 /* s5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9904D11AF70EDB006B3B82 /* s5.png */; };
-		2E9904E01AF70EDB006B3B82 /* s6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9904D21AF70EDB006B3B82 /* s6.png */; };
-		2E9904E11AF70EDB006B3B82 /* s7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9904D31AF70EDB006B3B82 /* s7.png */; };
-		2E9904E21AF70EDB006B3B82 /* s8.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9904D41AF70EDB006B3B82 /* s8.png */; };
-		2E9904E31AF70EDB006B3B82 /* s9.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9904D51AF70EDB006B3B82 /* s9.png */; };
-		2E9904E41AF70EDB006B3B82 /* s10.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9904D61AF70EDB006B3B82 /* s10.png */; };
-		2E9904E51AF70EDB006B3B82 /* s11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9904D71AF70EDB006B3B82 /* s11.png */; };
-		2E9904E61AF70EDB006B3B82 /* s12.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9904D81AF70EDB006B3B82 /* s12.png */; };
-		2E9904E71AF70EDB006B3B82 /* s13.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9904D91AF70EDB006B3B82 /* s13.png */; };
-		2E9904E81AF70EDB006B3B82 /* s14.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9904DA1AF70EDB006B3B82 /* s14.png */; };
 		2EC6BB541AF6B2D800AE8F19 /* VictoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6BB531AF6B2D800AE8F19 /* VictoryScreen.swift */; };
 		2EC6BB561AF6BA6300AE8F19 /* CustomMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6BB551AF6BA6300AE8F19 /* CustomMain.swift */; };
 		2EC6BB581AF6BB1400AE8F19 /* CustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6BB571AF6BB1400AE8F19 /* CustomPicker.swift */; };
-		2EC6BB601AF6DE7800AE8F19 /* Apple Watch.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EC6BB5F1AF6DE7800AE8F19 /* Apple Watch.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,27 +85,10 @@
 		2E6628C01AF5D432006E51AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E6628CC1AF5DE01006E51AC /* EmojiPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiPicker.swift; sourceTree = "<group>"; };
 		2E6628CE1AF5F693006E51AC /* SudokuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SudokuCell.swift; sourceTree = "<group>"; };
-		2E6735F91AFAE8E100FB3F00 /* Emoji Sudoku.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Emoji Sudoku.entitlements"; sourceTree = "<group>"; };
-		2E9904CB1AF70E40006B3B82 /* s0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s0.png; sourceTree = "<group>"; };
-		2E9904CD1AF70EDB006B3B82 /* s1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s1.png; path = ../s1.png; sourceTree = "<group>"; };
-		2E9904CE1AF70EDB006B3B82 /* s2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s2.png; path = ../s2.png; sourceTree = "<group>"; };
-		2E9904CF1AF70EDB006B3B82 /* s3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s3.png; path = ../s3.png; sourceTree = "<group>"; };
-		2E9904D01AF70EDB006B3B82 /* s4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s4.png; path = ../s4.png; sourceTree = "<group>"; };
-		2E9904D11AF70EDB006B3B82 /* s5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s5.png; path = ../s5.png; sourceTree = "<group>"; };
-		2E9904D21AF70EDB006B3B82 /* s6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s6.png; path = ../s6.png; sourceTree = "<group>"; };
-		2E9904D31AF70EDB006B3B82 /* s7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s7.png; path = ../s7.png; sourceTree = "<group>"; };
-		2E9904D41AF70EDB006B3B82 /* s8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s8.png; path = ../s8.png; sourceTree = "<group>"; };
-		2E9904D51AF70EDB006B3B82 /* s9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s9.png; path = ../s9.png; sourceTree = "<group>"; };
-		2E9904D61AF70EDB006B3B82 /* s10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s10.png; path = ../s10.png; sourceTree = "<group>"; };
-		2E9904D71AF70EDB006B3B82 /* s11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s11.png; path = ../s11.png; sourceTree = "<group>"; };
-		2E9904D81AF70EDB006B3B82 /* s12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s12.png; path = ../s12.png; sourceTree = "<group>"; };
-		2E9904D91AF70EDB006B3B82 /* s13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s13.png; path = ../s13.png; sourceTree = "<group>"; };
-		2E9904DA1AF70EDB006B3B82 /* s14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s14.png; path = ../s14.png; sourceTree = "<group>"; };
 		2EC6BB531AF6B2D800AE8F19 /* VictoryScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VictoryScreen.swift; sourceTree = "<group>"; };
 		2EC6BB551AF6BA6300AE8F19 /* CustomMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMain.swift; sourceTree = "<group>"; };
 		2EC6BB571AF6BB1400AE8F19 /* CustomPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPicker.swift; sourceTree = "<group>"; };
 		2EC6BB5C1AF6D0D500AE8F19 /* Emoji Sudoku WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Emoji Sudoku WatchKit Extension.entitlements"; sourceTree = "<group>"; };
-		2EC6BB5F1AF6DE7800AE8F19 /* Apple Watch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,28 +132,11 @@
 		2E6628851AF5D3F2006E51AC /* Emoji Sudoku */ = {
 			isa = PBXGroup;
 			children = (
-				2E6735F91AFAE8E100FB3F00 /* Emoji Sudoku.entitlements */,
-				2E9904CB1AF70E40006B3B82 /* s0.png */,
-				2E9904CD1AF70EDB006B3B82 /* s1.png */,
-				2E9904CE1AF70EDB006B3B82 /* s2.png */,
-				2E9904CF1AF70EDB006B3B82 /* s3.png */,
-				2E9904D01AF70EDB006B3B82 /* s4.png */,
-				2E9904D11AF70EDB006B3B82 /* s5.png */,
-				2E9904D21AF70EDB006B3B82 /* s6.png */,
-				2E9904D31AF70EDB006B3B82 /* s7.png */,
-				2E9904D41AF70EDB006B3B82 /* s8.png */,
-				2E9904D51AF70EDB006B3B82 /* s9.png */,
-				2E9904D61AF70EDB006B3B82 /* s10.png */,
-				2E9904D71AF70EDB006B3B82 /* s11.png */,
-				2E9904D81AF70EDB006B3B82 /* s12.png */,
-				2E9904D91AF70EDB006B3B82 /* s13.png */,
-				2E9904DA1AF70EDB006B3B82 /* s14.png */,
 				2E6628881AF5D3F2006E51AC /* AppDelegate.swift */,
 				2E66288A1AF5D3F2006E51AC /* ViewController.swift */,
 				2E66288C1AF5D3F2006E51AC /* Main.storyboard */,
 				2E66288F1AF5D3F2006E51AC /* Images.xcassets */,
 				2E6628911AF5D3F2006E51AC /* LaunchScreen.xib */,
-				2EC6BB5F1AF6DE7800AE8F19 /* Apple Watch.png */,
 				2E6628861AF5D3F2006E51AC /* Supporting Files */,
 			);
 			path = "Emoji Sudoku";
@@ -314,7 +264,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.iCloud = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -325,7 +275,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.iCloud = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -362,25 +312,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E9904E11AF70EDB006B3B82 /* s7.png in Resources */,
-				2E9904E51AF70EDB006B3B82 /* s11.png in Resources */,
-				2E9904DE1AF70EDB006B3B82 /* s4.png in Resources */,
-				2E9904E21AF70EDB006B3B82 /* s8.png in Resources */,
 				2E66288E1AF5D3F2006E51AC /* Main.storyboard in Resources */,
-				2E9904E01AF70EDB006B3B82 /* s6.png in Resources */,
-				2E9904E81AF70EDB006B3B82 /* s14.png in Resources */,
-				2E9904E31AF70EDB006B3B82 /* s9.png in Resources */,
 				2E6628931AF5D3F2006E51AC /* LaunchScreen.xib in Resources */,
-				2E9904DB1AF70EDB006B3B82 /* s1.png in Resources */,
-				2E9904CC1AF70E40006B3B82 /* s0.png in Resources */,
-				2E9904DD1AF70EDB006B3B82 /* s3.png in Resources */,
-				2E9904E61AF70EDB006B3B82 /* s12.png in Resources */,
 				2E6628901AF5D3F2006E51AC /* Images.xcassets in Resources */,
-				2E9904DC1AF70EDB006B3B82 /* s2.png in Resources */,
-				2EC6BB601AF6DE7800AE8F19 /* Apple Watch.png in Resources */,
-				2E9904E41AF70EDB006B3B82 /* s10.png in Resources */,
-				2E9904DF1AF70EDB006B3B82 /* s5.png in Resources */,
-				2E9904E71AF70EDB006B3B82 /* s13.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,9 +506,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Emoji Sudoku/Emoji Sudoku.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = FZ89A5SZ7C;
 				INFOPLIST_FILE = "Emoji Sudoku/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cal.$(PRODUCT_NAME:rfc1034identifier)";
@@ -590,9 +524,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Emoji Sudoku/Emoji Sudoku.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = FZ89A5SZ7C;
 				INFOPLIST_FILE = "Emoji Sudoku/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cal.$(PRODUCT_NAME:rfc1034identifier)";
@@ -654,7 +588,6 @@
 		2E6628C91AF5D432006E51AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Emoji Sudoku WatchKit Extension/Emoji Sudoku WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
@@ -679,7 +612,6 @@
 		2E6628CA1AF5D432006E51AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Emoji Sudoku WatchKit Extension/Emoji Sudoku WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";

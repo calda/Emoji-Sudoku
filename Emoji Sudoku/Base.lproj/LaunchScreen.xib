@@ -1,10 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14E11f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -16,81 +20,22 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMJ-vn-vGJ">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="779"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BP7-Jv-AJf">
-                            <rect key="frame" x="133" y="235" width="214" height="259"/>
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="width" secondItem="BP7-Jv-AJf" secondAttribute="height" multiplier="233:282" id="L26-Bx-bEW"/>
-                            </constraints>
-                        </view>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Apple Watch.png" translatesAutoresizingMaskIntoConstraints="NO" id="rf4-BE-SnA">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Apple Watch" translatesAutoresizingMaskIntoConstraints="NO" id="rf4-BE-SnA">
                             <rect key="frame" x="80" y="97" width="320" height="536"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="rf4-BE-SnA" secondAttribute="height" multiplier="187:313" id="8Xy-mV-VPe"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGf-94-UeU">
-                            <rect key="frame" x="16" y="712" width="464" height="51"/>
-                            <constraints>
-                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="51" id="4aY-wq-kot"/>
-                                <constraint firstAttribute="height" constant="51" id="QFn-vZ-fAq"/>
-                            </constraints>
-                            <attributedString key="attributedText">
-                                <fragment content="Emoji Sudoku">
-                                    <attributes>
-                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <font key="NSFont" size="26" name="HelveticaNeue-Thin"/>
-                                        <font key="NSOriginalFont" size="26" name="HelveticaNeue-Thin"/>
-                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                    </attributes>
-                                </fragment>
-                                <fragment content="                                                                          ">
-                                    <attributes>
-                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                    </attributes>
-                                </fragment>
-                                <fragment content="is waiting for you on Apple Watch">
-                                    <attributes>
-                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
-                                        <font key="NSOriginalFont" size="17" name="HelveticaNeue-Light"/>
-                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                    </attributes>
-                                </fragment>
-                            </attributedString>
-                            <nil key="highlightedColor"/>
-                            <variation key="default">
-                                <mask key="constraints">
-                                    <exclude reference="4aY-wq-kot"/>
-                                </mask>
-                            </variation>
-                        </label>
                     </subviews>
-                    <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.97000002861022949" green="0.97000002861022949" blue="0.97000002861022949" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="BP7-Jv-AJf" firstAttribute="width" secondItem="rf4-BE-SnA" secondAttribute="width" multiplier="2:3" id="CN1-yG-Nyh"/>
-                        <constraint firstAttribute="trailing" secondItem="yGf-94-UeU" secondAttribute="trailing" id="DMf-94-2Qf"/>
-                        <constraint firstItem="yGf-94-UeU" firstAttribute="leading" secondItem="aMJ-vn-vGJ" secondAttribute="leadingMargin" id="F93-x6-BwQ"/>
-                        <constraint firstAttribute="bottom" secondItem="yGf-94-UeU" secondAttribute="bottom" constant="16" id="Sei-9T-fOj"/>
                         <constraint firstAttribute="centerX" secondItem="rf4-BE-SnA" secondAttribute="centerX" id="WSM-KH-awc"/>
-                        <constraint firstAttribute="centerX" secondItem="BP7-Jv-AJf" secondAttribute="centerX" id="dJe-UB-WJ8"/>
-                        <constraint firstAttribute="width" secondItem="yGf-94-UeU" secondAttribute="width" id="dsB-I9-piM"/>
-                        <constraint firstAttribute="centerY" secondItem="BP7-Jv-AJf" secondAttribute="centerY" constant="25" id="myI-V2-lEb"/>
                         <constraint firstAttribute="centerY" secondItem="rf4-BE-SnA" secondAttribute="centerY" constant="25" id="pFR-yb-Oqe"/>
                         <constraint firstAttribute="width" secondItem="rf4-BE-SnA" secondAttribute="width" multiplier="3:2" id="qn1-hX-nMe"/>
-                        <constraint firstItem="yGf-94-UeU" firstAttribute="leading" secondItem="aMJ-vn-vGJ" secondAttribute="leading" constant="16" id="r5d-lV-E2H"/>
                     </constraints>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="F93-x6-BwQ"/>
-                            <exclude reference="dsB-I9-piM"/>
-                        </mask>
-                    </variation>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="aMJ-vn-vGJ" secondAttribute="trailing" id="8gt-SB-ZBt"/>
                 <constraint firstItem="aMJ-vn-vGJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="A47-FK-blQ"/>
@@ -103,6 +48,6 @@
         </view>
     </objects>
     <resources>
-        <image name="Apple Watch.png" width="600" height="1000"/>
+        <image name="Apple Watch" width="600" height="1000"/>
     </resources>
 </document>
