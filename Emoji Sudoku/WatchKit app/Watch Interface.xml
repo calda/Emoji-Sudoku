@@ -12,7 +12,7 @@
         <!--Sudoku-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller title="Sudoku" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Emoji_Sudoku__" customModuleProvider="target">
+                <controller title="Sudoku" identifier="main" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Emoji_Sudoku__" customModuleProvider="target">
                     <items>
                         <group width="1" height="0.25" alignment="left" id="WMp-vW-XtV">
                             <items>
@@ -819,32 +819,23 @@
             <objects>
                 <controller identifier="victory" title="Sudoku" id="n0p-7U-sbC" customClass="VictoryScreen" customModule="Emoji_Sudoku_WatchKit_Extension">
                     <items>
-                        <label width="1" height="0.26000000000000001" alignment="left" text="😎❤️🔥🎉" textAlignment="center" id="aEH-pB-5kE">
+                        <label width="1" height="0.35" alignment="left" text="😎❤️🔥🎉" textAlignment="center" id="aEH-pB-5kE">
                             <fontDescription key="font" type="system" pointSize="29"/>
                             <variation key="device=watch42mm">
                                 <fontDescription key="font" type="system" pointSize="34"/>
                             </variation>
                         </label>
-                        <label width="1" height="0.31" alignment="left" text="You Won in XXXXXXXXXX" textAlignment="center" numberOfLines="2" id="QU5-yL-8yU">
+                        <label width="1" height="0.35" alignment="left" text="You Won in XXXXXXXXXX" textAlignment="center" numberOfLines="2" id="QU5-yL-8yU">
                             <fontDescription key="font" type="system" pointSize="18"/>
                             <variation key="device=watch42mm">
                                 <fontDescription key="font" type="system" pointSize="18"/>
                             </variation>
                         </label>
-                        <button width="1" height="0.20000000000000001" alignment="left" title="Play Again" id="xl8-QO-1Dj">
+                        <button width="1" height="0.2" alignment="left" title="Play Again" id="xl8-QO-1Dj">
                             <connections>
                                 <action selector="playAgain" destination="n0p-7U-sbC" id="sv3-z0-NPN"/>
                             </connections>
                         </button>
-                        <label width="1" height="0.23000000000000001" alignment="left" text="Force Touch to Customize Emoji" textAlignment="center" numberOfLines="2" minimumScaleFactor="0.50000000000000011" id="rxN-UQ-r6q">
-                            <fontDescription key="font" type="system" pointSize="16"/>
-                            <variation key="device=watch38mm">
-                                <fontDescription key="font" type="system" pointSize="13"/>
-                            </variation>
-                            <variation key="device=watch42mm">
-                                <fontDescription key="font" type="system" pointSize="14"/>
-                            </variation>
-                        </label>
                     </items>
                     <menu key="menu" id="ToU-QC-563">
                         <items>

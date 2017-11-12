@@ -92,7 +92,6 @@ class InterfaceController: WKInterfaceController {
     }
 
     func processTap(_ col: Int, _ row: Int) {
-        print("(\(col), \(row))")
         selectedCell = (col, row)
         if cell[col][row].revealed {
             cell[col][row].pingNoOnButton(buttonMap[col][row]!)

@@ -34,11 +34,11 @@ class VictoryScreen : WKInterfaceController {
     }
     
     @IBAction func playAgain() {
-        main!.restart()
-        main!.dismiss()
+        main?.restart()
+        self.pop()
     }
     
     @IBAction func customize() {
-        self.presentController(withName: "customize", context: self)
+        self.pushController(withName: "customize", context: self)
     }
 }
