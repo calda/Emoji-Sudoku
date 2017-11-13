@@ -19,7 +19,6 @@
 		2E66288B1AF5D3F2006E51AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E66288A1AF5D3F2006E51AC /* ViewController.swift */; };
 		2E66288E1AF5D3F2006E51AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E66288C1AF5D3F2006E51AC /* Main.storyboard */; };
 		2E6628901AF5D3F2006E51AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E66288F1AF5D3F2006E51AC /* Images.xcassets */; };
-		2E6628B31AF5D432006E51AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E6628B21AF5D432006E51AC /* Images.xcassets */; };
 		2E6628BF1AF5D432006E51AC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6628BD1AF5D432006E51AC /* Interface.storyboard */; };
 		2E6628C11AF5D432006E51AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E6628C01AF5D432006E51AC /* Images.xcassets */; };
 		2E6628CD1AF5DE01006E51AC /* EmojiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6628CC1AF5DE01006E51AC /* EmojiPicker.swift */; };
@@ -92,7 +91,6 @@
 		2E6628AC1AF5D431006E51AC /* Emoji Sudoku WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Emoji Sudoku WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6628AF1AF5D432006E51AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E6628B01AF5D432006E51AC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		2E6628B21AF5D432006E51AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E6628B61AF5D432006E51AC /* Emoji Sudoku Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Sudoku Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6628BC1AF5D432006E51AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E6628BE1AF5D432006E51AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -207,7 +205,6 @@
 				2EC6BB531AF6B2D800AE8F19 /* VictoryScreen.swift */,
 				2EC6BB551AF6BA6300AE8F19 /* CustomMain.swift */,
 				2EC6BB571AF6BB1400AE8F19 /* CustomPicker.swift */,
-				2E6628B21AF5D432006E51AC /* Images.xcassets */,
 				2E6628AE1AF5D432006E51AC /* Supporting Files */,
 			);
 			path = "Emoji Sudoku WatchKit Extension";
@@ -372,7 +369,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E6628B31AF5D432006E51AC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +599,7 @@
 				"PROVISIONING_PROFILE[sdk=*]" = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -628,6 +625,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
